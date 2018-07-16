@@ -12,16 +12,23 @@
       createCanvas(400, 400);
     } 
     
-    var x = Math.random()*400;
-    var y = Math.random()*400;
+    xPositions = [];
+    yPositions = [];
+    
+    for (var i=0; i<5; i++) {
+          var x = Math.random()*400;
+          var y = Math.random()*400;
+          xPositions.push(x);
+          yPositions.push(y);
+    }
     
     function draw() { 
       background(220);
-      color = fill(100, 150, 100);
-      ellipse(x, y, 20, 20);
-      for (var i=0; i<5; i++) {
-        x++;
-        y++;
+      fill(100, 150, 100);
+      for (var i = 0; i<5; i++) {
+          ellipse(xPositions[i], yPositions[i], 10, 10);
+          xPositions[i]++;
+          yPositions[i]++;
       }
     }
 </script>
