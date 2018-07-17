@@ -56,11 +56,12 @@
     var particles = new Array();
     const N = 200;
     const size = 10;
-    const speed = 20;
+    var speed = 5;
     
     function setup() { 
         createCanvas(400, 400);
         fill(50, 150, 50);
+        noStroke();
         for(var i=0; i<N; i++) {
             particles.push(new Particle(Math.random()*(width-1)+0.5, Math.random()*(height-1)+0.5, Math.random()*speed-speed/2, Math.random()*speed-speed/2));
         }
@@ -97,20 +98,23 @@
         g = 150;
         b = 50;
         
-        if (canvasSize < 350 && canvasSize > 300) {
+        if (canvasSize < 350 && canvasSize > 210) {
             r = 255;
             g = 255;
             b = 0;
+            speed += 50;
         }
-        if (canvasSize < 300 && canvasSize > 250) {
+        if (canvasSize < 210 && canvasSize > 150) {
             r = 255;
             g = 165; 
             b = 0;
+            speed += 100;
         }
-        if (canvasSize < 250 && canvasSize > 100) {
+        if (canvasSize < 150 && canvasSize > 100) {
             r = 255;
             g = 0;
             b = 0;
+            speed += 150;
         }
         fill(r, g, b);
     }
