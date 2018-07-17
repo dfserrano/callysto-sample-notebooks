@@ -91,7 +91,27 @@
         }
     }
     function mousePressed() {
-        createCanvas(random(100, 400), random(100, 400));
-        fill(50, 150, 50);
+        canvasSize = random(100, 400);
+        createCanvas(canvasSize, canvasSize);
+        r = 50;
+        g = 150;
+        b = 50;
+        
+        if (canvasSize < 350 && canvasSize > 300) {
+            r = 255;
+            g = 255;
+            b = 0;
+        }
+        if (canvasSize < 300 && canvasSize > 250) {
+            r = 255;
+            g = 165; 
+            b = 0;
+        }
+        if (canvasSize < 250 && canvasSize > 100) {
+            r = 255;
+            g = 0;
+            b = 0;
+        }
+        fill(r, g, b);
     }
 </script>
