@@ -1,0 +1,93 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+</style>
+<script>
+    function Particle(tx, ty, tsx, tsy) {
+        this.x = tx;
+        this.y = ty;
+        this.sx = tsx;
+        this.sy = tsy;
+        this.incr = function() {
+            var temp = Math.floor(Math.random()*2);
+            
+            if(this.x < width && this.x > 0) {
+                this.x += this.sx;
+            }else if(this.x >= width){
+                this.sx *= -1;
+                this.x = width-1;
+                if(temp == 0) this.sx += Math.random()/2;
+                else this.sx -= Math.random()/2;
+            }else if(this.x <= 0) {
+                this.sx *= -1;
+                this.x = 1;
+                if(temp == 0) this.sx += Math.random()/2;
+                else this.sx -= Math.random()/2;
+            }
+            
+            temp = Math.floor(Math.random()*2);
+            if(this.y < height && this.y > 0) {
+                this.y += this.sy;
+            }else if(this.y >= height) {
+                this.y = height-1;
+                this.sy *= -1;
+                if(temp == 0) this.sy += Math.random()/2;
+                else this.sy -= Math.random()/2;
+            }else if(this.y <= 0) {
+                this.y = 1;
+                this.sy *= -1;
+                if(temp == 0) this.sy += Math.random()/2;
+                else this.sy -= Math.random()/2;
+            }
+        }
+        this.collide = function(ox, oy) {
+            if((this.x<=ox+size/2 & this.x>ox-size/2) && (this.y<=oy+size/2 && this.y>oy-size/2)) {
+                return true;
+            }
+            return false;
+        }
+    }
+    
+    var particles = new Array();
+    const N = 200;
+    const size = 10;
+    const speed = 20;
+    
+    function setup() { 
+        createCanvas(400, 400);
+        fill(50, 150, 50);
+        for(var i=0; i<N; i++) {
+            particles.push(new Particle(Math.random()*(width-1)+0.5, Math.random()*(height-1)+0.5, Math.random()*speed-speed/2, Math.random()*speed-speed/2));
+        }
+    } 
+    
+    function draw() { 
+        background(100, 150, 200);
+        for(var i=0; i<N; i++) {
+            ellipse(particles[i].x, particles[i].y, 10, 10);
+            particles[i].incr();
+            
+            for(var j=0; j<N; j++) {
+                var temp = Math.floor(Math.random()*2);
+                if(j != i && particles[i].collide(particles[j].x, particles[j].y)) {
+                    if(temp == 0) {
+                        particles[i].sx *= -1;
+                        particles[i].x += particles[i].sx;
+                        particles[j].sx *= -1;
+                        particles[j].x += particles[j].sx;
+                    }else {
+                        particles[i].sy *= -1;
+                        particles[i].y += particles[i].sy;
+                        particles[j].sy *= -1;
+                        particles[j].y += particles[j].sy;
+                    }
+                }
+            }
+        }
+    }
+</script>
