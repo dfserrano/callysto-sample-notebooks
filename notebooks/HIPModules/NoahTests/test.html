@@ -54,26 +54,36 @@
     }
     
     var particles = new Array();
-    const N = 200;
-    const size = 10;
-    const speed = 20;
-    var boxsize = 400;
+    var volumeSlider, tempSlider;
+    
+    const N = 150;
+    const size = 7;
+    var speed = 20;
+    var boxsize = 200;
+    
+    
     
     function setup() { 
-        createCanvas(400, 400);
-        for(var i=0; i<N; i++) {
-            particles.push(new Particle(Math.random()*(boxsize-1)+0.5, Math.random()*(boxsize-1)+0.5, Math.random()*speed-speed/2, Math.random()*speed-speed/2));
-        }
+        createCanvas(400, 600);
+        generate();
+        volumeSlider = createSlider(0, 400, 200);
+        volumeSlider.position((width-volumeSlider.width)/2, 450);
+        tempSlider = createSlider(0.1, 40, 20);
+        tempSlider.position((width-volumeSlider.width)/2, 525);
     } 
     
     function draw() { 
         background(100, 150, 200);
+        
+        boxsize = volumeSlider.value();
+        speed = tempSlider.value();
+        
         fill(50, 150, 200);
-        rect(0, 0, boxsize+15, boxsize+15);
+        rect(0, 0, boxsize+5, boxsize+5);
         
         fill(50, 150, 50);
         for(var i=0; i<N; i++) {
-            ellipse(particles[i].x, particles[i].y, 10, 10);
+            ellipse(particles[i].x, particles[i].y, size, size);
             particles[i].incr(boxsize);
             
             for(var j=0; j<N; j++) {
@@ -92,6 +102,17 @@
                     }
                 }
             }
+        }
+    }
+    
+    function mouseReleased() {
+        generate();
+    }
+    
+    function generate() {
+        particles = new Array();
+        for(var i=0; i<N; i++) {
+            particles.push(new Particle(Math.random()*(boxsize-1)+0.5, Math.random()*(boxsize-1)+0.5, Math.random()*speed-speed/2, Math.random()*speed-speed/2));
         }
     }
 </script>
