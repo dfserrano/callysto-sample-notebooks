@@ -38,13 +38,29 @@
         x+=speed;
         
         if (gunPowder.value() > 0 && gunPowder.value() <= 1) {
-            if (x > 250) {
+            if (x > 340) {
                 y+=speed;
             }
             
-            if (x > 200 && x < 250) {
+            if (x > 200 && x < 230) {
+                y-=(speed-2);
+            }
+            
+            if (x > 230 && x < 260) {
+                y-=(speed-5);
+            }
+            
+            if (x > 260 && x < 290) {
                 y+=speed;
                 y-=speed;
+            }
+            
+            if (x > 290 && x < 210) {
+                y+=(speed-5);
+            }
+            
+            if (x > 310 && x < 340) {
+                y+=(speed-2);
             }
 
             if (x < 200) {
