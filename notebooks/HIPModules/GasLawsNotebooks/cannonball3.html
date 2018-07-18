@@ -20,8 +20,8 @@
     var x=10;
     var y=400;
     var xspeed=1;
-    //var yspeed=1;
-    var acc = 4;
+    var yspeed=1;
+    var acc = 2;
     
     function draw() {
         background(255, 255, 255);
@@ -37,7 +37,8 @@
         
         ellipse(x, y, 50, 50);
         x+=xspeed;
-        //xspeed+=acc;
+        y-=yspeed;
+        yspeed+=acc;
         
         
     }
@@ -45,10 +46,9 @@
     function mousePressed() {
         x=10;
         y=400;
-        xspeed=xspeed;
-        //yspeed=1;
-        xspeed+=10;
-        //xspeed+=acc;
+        x+=xspeed;
+        y+=yspeed;
+        yspeed+=acc;
     }
     
 </script>

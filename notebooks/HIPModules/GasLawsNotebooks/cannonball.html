@@ -12,7 +12,7 @@
     var gunPowder;
     
     function setup() { 
-      createCanvas(400, 400);
+      createCanvas(1000, 400);
       gunPowder = createSlider(0, 5, 1);
       gunPowder.position(20, 20);
     } 
@@ -20,8 +20,7 @@
     var x=10;
     var y=400;
     var speed;
-    var acc = 4;
-    //
+    //var acc = 4;
     
     function draw() {
         background(255, 255, 255);
@@ -37,11 +36,20 @@
         
         ellipse(x, y, 50, 50);
         x+=speed;
-        y-=speed;
         
-        
-        if (x > 300) {
-            y+=10*acc;
+        if (gunPowder.value() > 0 && gunPowder.value() <= 1) {
+            if (x > 250) {
+                y+=speed;
+            }
+            
+            if (x > 200 && x < 250) {
+                y+=speed;
+                y-=speed;
+            }
+
+            if (x < 200) {
+                y-=speed;
+            }
         }
     }
     
