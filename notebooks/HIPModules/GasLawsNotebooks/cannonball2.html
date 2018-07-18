@@ -1,0 +1,56 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+</style>
+<script>
+    
+    var gunPowder;
+    
+    function setup() { 
+      createCanvas(400, 400);
+      gunPowder = createSlider(0, 5, 1);
+      gunPowder.position(20, 20);
+    } 
+    
+    var x=10;
+    var y=400;
+    var xspeed;
+    var yspeed;
+    var acc = 4;
+    //
+    
+    function draw() {
+        background(255, 255, 255);
+        fill(0, 0, 0);
+        
+        text("Gunpowder = " + gunPowder.value() + " lb", gunPowder.x * 2 + gunPowder.width, 30);
+        
+        push();
+        rotate(radians(45));
+        fill(0);
+        rect(250, 180, 80, 100);
+        pop();
+        
+        ellipse(x, y, 50, 50);
+        x+=xspeed;
+        y-=yspeed;
+        
+        
+        
+    }
+    
+    function mousePressed() {
+        x=10;
+        y=400;
+        xspeed=5*gunPowder.value();
+        yspeed=5*gunPowder.value();
+        x+=xspeed;
+        y-=yspeed;
+    }
+    
+</script>
