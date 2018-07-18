@@ -17,14 +17,15 @@
       gunPowder.position(20, 20);
     } 
     
-    var x=10;
+    var x=5;
     var y=400;
     var xspeed=1;
     var yspeed=1;
-    const acc = 0.08;
+    const acc = 0.02;
     
     function draw() {
         background(255, 255, 255);
+
         fill(0, 0, 0);
         
         text("Gunpowder = " + gunPowder.value() + " lb", gunPowder.x * 2 + gunPowder.width, 30);
@@ -38,17 +39,19 @@
         ellipse(x, y, 50, 50);
         x+=xspeed;
         y-=yspeed;
+     
         yspeed-=acc;
+        
         
     }
     
     function mousePressed() {
-        x=10;
+        x=0;
         y=400;
     }
     function mouseReleased() {
-        xspeed=gunPowder.value();
-        yspeed=gunPowder.value()*2;
+        xspeed=2*gunPowder.value();
+        yspeed=2*gunPowder.value();
     }
     
 </script>
