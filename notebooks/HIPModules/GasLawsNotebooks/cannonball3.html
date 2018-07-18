@@ -12,7 +12,7 @@
     var gunPowder;
     
     function setup() { 
-      createCanvas(400, 400);
+      createCanvas(1000, 400);
       gunPowder = createSlider(0, 5, 1);
       gunPowder.position(20, 20);
     } 
@@ -21,7 +21,7 @@
     var y=400;
     var xspeed=1;
     var yspeed=1;
-    var acc = 2;
+    const acc = 0.08;
     
     function draw() {
         background(255, 255, 255);
@@ -38,17 +38,17 @@
         ellipse(x, y, 50, 50);
         x+=xspeed;
         y-=yspeed;
-        yspeed+=acc;
-        
+        yspeed-=acc;
         
     }
     
     function mousePressed() {
         x=10;
         y=400;
-        x+=xspeed;
-        y+=yspeed;
-        yspeed+=acc;
+    }
+    function mouseReleased() {
+        xspeed=gunPowder.value();
+        yspeed=gunPowder.value()*2;
     }
     
 </script>
