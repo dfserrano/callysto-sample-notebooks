@@ -9,72 +9,106 @@
 </style>
 <script>
     
+    
     var gunPowder;
+    var cannonBalls;
     
     function setup() { 
       createCanvas(1000, 400);
-      gunPowder = createSlider(0, 5, 1);
+        
+      gunPowder = createSlider(1, 5, 1);
       gunPowder.position(20, 20);
+        
+      cannonBalls = createSlider(1, 2, 1);
+      cannonBalls.position(20, 40);
     } 
     
-    var x=10;
+    var x=5;
     var y=400;
-    var speed;
-    //var acc = 4;
+    var xspeed=1;
+    var yspeed=1;
+    const acc = 0.2;
+    
     
     function draw() {
-        background(255, 255, 255);
+        background(135, 206, 250);
+        noStroke();
+        
+        fill(50, 150, 100);
+        rect(0, 350, 1000, 50);
+        
+        
+        for (var i = 10; i < 50; i += 10) {
+            fill(57, 2, 2);
+            rect((i*15)+12, 250, 20, 100)
+            fill(50, 150, 100);
+            //level1
+            ellipse((i+3)*15, 250, 50, 50);
+            ellipse(i*15, 250, 50, 50);
+            //level2
+            ellipse((i-1)*15, 220, 50, 50);
+            ellipse((i+1.5)*15, 220, 50, 50);
+            ellipse((i+4)*15, 220, 50, 50);
+            //level3
+            ellipse((i+3)*15, 190, 50, 50);
+            ellipse(i*15, 190, 50, 50);
+        }
+
         fill(0, 0, 0);
         
         text("Gunpowder = " + gunPowder.value() + " lb", gunPowder.x * 2 + gunPowder.width, 30);
+        if (cannonBalls.value() == 1) {
+            text("Cannonballs = " + cannonBalls.value(), cannonBalls.x * 2 + cannonBalls.width, 50);
+        }
+        if (cannonBalls.value() == 2) {
+            text("Cannonballs = INFINITY", cannonBalls.x * 2 + cannonBalls.width, 50);
+        }
         
-        push();
-        rotate(radians(45));
         fill(0);
-        rect(250, 180, 80, 100);
-        pop();
         
-        ellipse(x, y, 50, 50);
-        x+=speed;
         
-        if (gunPowder.value() > 0 && gunPowder.value() <= 1) {
-            if (x > 340) {
-                y+=speed;
-            }
+ 
+        if (cannonBalls.value() == 1) {
+            ellipse(x, y, 50, 50);
+        }
+        if (cannonBalls.value() == 2) {
+            ellipse(x, y, 50, 50);
             
-            if (x > 200 && x < 230) {
-                y-=(speed-2);
-            }
             
-            if (x > 230 && x < 260) {
-                y-=(speed-5);
-            }
             
-            if (x > 260 && x < 290) {
-                y+=speed;
-                y-=speed;
-            }
-            
-            if (x > 290 && x < 210) {
-                y+=(speed-5);
-            }
-            
-            if (x > 310 && x < 340) {
-                y+=(speed-2);
-            }
-
-            if (x < 200) {
-                y-=speed;
+            if (y > 400) {
+                x=5;
+                y=400;
+                ellipse(x, y, 50, 50);
+                xspeed=gunPowder.value()+3.5;
+                yspeed=gunPowder.value()+3.5;
             }
         }
+        
+        x+=xspeed;
+        y-=yspeed;
+        yspeed-=acc;
+        
+        
+        push();
+        rotate(radians(50));
+        fill(105,105,105);
+        rect(270, 180, 80, 100);
+        pop();
+        
     }
     
-    function mousePressed() {
-        x=10;
+    function mouseClicked() {
+        x=5;
         y=400;
-        speed=5*gunPowder.value();
-        x+=speed;
-        y-=speed;
+        xspeed=gunPowder.value()+3.5;
+        yspeed=gunPowder.value()+3.5;
+        if (gunPowder.value() == 0) {
+            text("Cannonballs = infinity", cannonBalls.x * 2 + cannonBalls.width, 50);
+            xSpeed = 0;
+            ySpeed = 0;
+        }
     }
+
     
 </script>
