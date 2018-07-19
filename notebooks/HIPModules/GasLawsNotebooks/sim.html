@@ -1,15 +1,17 @@
+<!-- Import p5.js libraries. -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+
+<!-- Basic CSS for iframe. -->
 <style>
     * {
       margin: 0;
       padding: 0;
     }
 </style>
-<script>
-    
-    // Creates Particle object (blueprint for making particles).
+<script>  
+    // Particle class, treats each particle as an individual object.
     function Particle(tx, ty, tsx, tsy) {
         
         // Initializing variables used in animation. 
@@ -18,8 +20,7 @@
         this.sx = tsx;
         this.sy = tsy;
         
-        // Keeps particles moving within the box. 
-        // Also makes particles move in the opposite direction when they hit the box's edge as if they hit it. 
+        // Runs particle movement, increments each step. Additionally, keeps the particles from leaving the box. 
         this.incr = function(box) {
             if(this.x < box && this.x > 0) {
                 this.x += this.sx;
@@ -42,16 +43,16 @@
             }
         }
         
-        // 
-        this.collide = function(ox, oy) {
-            if(this.x<=ox+size & this.x>ox-size && this.y<=oy+size && this.y>oy-size) {
+        // Helper function for testing for collisions with other particles.
+        this.collide = function(otherx, othery) {
+            if(this.x<=otherx+size & this.x>otherx-size && this.y<=othery+size && this.y>othery-size) {
                 return true;
             }
             return false;
         }
     }
     
-    // Initializes variables. 
+    // Initializes global variables. 
     var particles = new Array();
     const N = 150;
     const size = 7;
@@ -61,7 +62,7 @@
     // Initializes slider variables. 
     var volumeSlider, tempSlider;
     
-    // Randombly populates the simulation space with particles (using Particle object "blueprint"). 
+    // Randombly populates the simulation space with particles (Using Particle object). 
     function generate() {
         particles = new Array();
         for(var i=0; i<N; i++) {
@@ -69,10 +70,11 @@
         }
     }
     
-    // Initializes set up of canvas. 
+    // Initializes set up of canvas, or simulation window. 
     function setup() { 
         createCanvas(700, 400);
         generate();
+        
         // Creates sliders. 
         volumeSlider = createSlider(30, 400, 350);
         volumeSlider.position((300-volumeSlider.width)/2+400, 150);
@@ -80,7 +82,7 @@
         tempSlider.position((300-volumeSlider.width)/2+400, 250);
     } 
     
-    // The draw() function runs repeatedly many times a second.
+    // Essentially runs the program, moving the simulation forward.
     function draw() { 
         
         // Creates simulation graphics. 
@@ -94,19 +96,21 @@
         boxsize = volumeSlider.value();
         speed = tempSlider.value();
         
+        // Draw box, or the bounds of the gas container.
         fill(178, 216, 255);
         stroke(0);
         rect(0, 0, boxsize+speed/2, boxsize+speed/2);
             
+        // Prepare the graphics of each particle.
         fill(220, 0, 0);
         noStroke();
          
-        // 
+        // Draws every particle.
         for(var i=0; i<N; i++) {
             ellipse(particles[i].x, particles[i].y, size, size);
             particles[i].incr(boxsize);
             
-            // 
+            // Moves the particles, and checks for collisions using the Particle.collide helper function.
             for(var j=0; j<N; j++) {
                 var temp = Math.floor(Math.random()*2);
                 if(j != i && particles[i].collide(particles[j].x, particles[j].y)) {
@@ -127,7 +131,7 @@
     }
     
     // Every time the user clicks the simulation is repopulated with new particles. 
-    function mouseClicked() {
+    function mouseReleased() {
         generate();
     }
 </script>
