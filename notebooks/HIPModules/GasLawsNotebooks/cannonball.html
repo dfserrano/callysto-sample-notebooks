@@ -1,6 +1,9 @@
+<!-- Imports. -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+
+<!-- Makes screen take full width and height. -->
 <style>
     * {
       margin: 0;
@@ -9,7 +12,7 @@
 </style>
 <script>
     
-    // Initializing slider variables. 
+    // Initializes slider variables. 
     var gunPowder;
     var cannonBalls;
     
@@ -72,13 +75,14 @@
         
         fill(0);
         
-        // Creates more cannonballs if the user adjusts the slider.
+        // Creates some number of cannonballs depending on how the user adjusts the slider.
         if (cannonBalls.value() == 1) {
             ellipse(x, y, 50, 50);
         }
         if (cannonBalls.value() == 2) {
             ellipse(x, y, 50, 50);
             
+            // Every time the ball reaches the bottom of the screen, its coordinates are reset to launch again. 
             if (y > 400) {
                 x=5;
                 y=400;

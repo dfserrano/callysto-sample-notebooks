@@ -18,7 +18,8 @@
         this.sx = tsx;
         this.sy = tsy;
         
-        //
+        // Keeps particles moving within the box. 
+        // Also makes particles move in the opposite direction when they hit the box's edge as if they hit it. 
         this.incr = function(box) {
             if(this.x < box && this.x > 0) {
                 this.x += this.sx;
@@ -41,7 +42,7 @@
             }
         }
         
-        //
+        // 
         this.collide = function(ox, oy) {
             if(this.x<=ox+size & this.x>ox-size && this.y<=oy+size && this.y>oy-size) {
                 return true;
@@ -59,6 +60,14 @@
     
     // Initializes slider variables. 
     var volumeSlider, tempSlider;
+    
+    // Randombly populates the simulation space with particles (using Particle object "blueprint"). 
+    function generate() {
+        particles = new Array();
+        for(var i=0; i<N; i++) {
+            particles.push(new Particle(Math.random()*(boxsize-1)+0.5, Math.random()*(boxsize-1)+0.5, Math.random()*speed-speed/2, Math.random()*speed-speed/2));
+        }
+    }
     
     // Initializes set up of canvas. 
     function setup() { 
@@ -81,7 +90,7 @@
         text("Volume", 510, 140);
         text("Temperature", 480, 240);
         
-        // Enables user to manipulate volume and temperature using sliders.
+        // Enables user to increase or decrease the volume and temperature using sliders.
         boxsize = volumeSlider.value();
         speed = tempSlider.value();
         
@@ -92,12 +101,12 @@
         fill(220, 0, 0);
         noStroke();
          
-        //
+        // 
         for(var i=0; i<N; i++) {
             ellipse(particles[i].x, particles[i].y, size, size);
             particles[i].incr(boxsize);
             
-            //
+            // 
             for(var j=0; j<N; j++) {
                 var temp = Math.floor(Math.random()*2);
                 if(j != i && particles[i].collide(particles[j].x, particles[j].y)) {
@@ -117,16 +126,8 @@
         }
     }
     
-    //
-    function mouseReleased() {
+    // Every time the user clicks the simulation is repopulated with new particles. 
+    function mouseClicked() {
         generate();
-    }
-    
-    // Randombly populates the simulation space with particles (using Particle object "blueprint"). 
-    function generate() {
-        particles = new Array();
-        for(var i=0; i<N; i++) {
-            particles.push(new Particle(Math.random()*(boxsize-1)+0.5, Math.random()*(boxsize-1)+0.5, Math.random()*speed-speed/2, Math.random()*speed-speed/2));
-        }
     }
 </script>
