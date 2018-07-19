@@ -8,11 +8,17 @@
     }
 </style>
 <script>
+    
+    // Creates Particle object (blueprint for making particles).
     function Particle(tx, ty, tsx, tsy) {
+        
+        // Initializing variables used in animation. 
         this.x = tx;
         this.y = ty;
         this.sx = tsx;
         this.sy = tsy;
+        
+        //
         this.incr = function(box) {
             if(this.x < box && this.x > 0) {
                 this.x += this.sx;
@@ -34,6 +40,8 @@
                 this.sy *= -1;
             }
         }
+        
+        //
         this.collide = function(ox, oy) {
             if(this.x<=ox+size & this.x>ox-size && this.y<=oy+size && this.y>oy-size) {
                 return true;
@@ -42,33 +50,38 @@
         }
     }
     
+    // Initializes variables. 
     var particles = new Array();
-    var volumeSlider, tempSlider;
-    
     const N = 150;
     const size = 7;
     var speed = 20;
     var boxsize = 350;
     
+    // Initializes slider variables. 
+    var volumeSlider, tempSlider;
     
-    
+    // Initializes set up of canvas. 
     function setup() { 
         createCanvas(700, 400);
         generate();
+        // Creates sliders. 
         volumeSlider = createSlider(30, 400, 350);
         volumeSlider.position((300-volumeSlider.width)/2+400, 150);
         tempSlider = createSlider(0.1, 40, 20);
         tempSlider.position((300-volumeSlider.width)/2+400, 250);
     } 
     
+    // The draw() function runs repeatedly many times a second.
     function draw() { 
+        
+        // Creates simulation graphics. 
         background(255, 217, 148);
         fill(0);
         textSize(25);
         text("Volume", 510, 140);
         text("Temperature", 480, 240);
         
-        
+        // Enables user to manipulate volume and temperature using sliders.
         boxsize = volumeSlider.value();
         speed = tempSlider.value();
         
@@ -78,10 +91,13 @@
             
         fill(220, 0, 0);
         noStroke();
+         
+        //
         for(var i=0; i<N; i++) {
             ellipse(particles[i].x, particles[i].y, size, size);
             particles[i].incr(boxsize);
             
+            //
             for(var j=0; j<N; j++) {
                 var temp = Math.floor(Math.random()*2);
                 if(j != i && particles[i].collide(particles[j].x, particles[j].y)) {
@@ -101,10 +117,12 @@
         }
     }
     
+    //
     function mouseReleased() {
         generate();
     }
     
+    // Randombly populates the simulation space with particles (using Particle object "blueprint"). 
     function generate() {
         particles = new Array();
         for(var i=0; i<N; i++) {

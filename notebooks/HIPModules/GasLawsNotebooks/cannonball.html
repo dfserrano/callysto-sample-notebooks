@@ -9,20 +9,22 @@
 </style>
 <script>
     
-    
+    // Initializing slider variables. 
     var gunPowder;
     var cannonBalls;
     
+    // Initial set up of the canvas.
     function setup() { 
       createCanvas(1000, 400);
-        
+      
+      // Creates sliders. 
       gunPowder = createSlider(1, 5, 1);
       gunPowder.position(20, 20);
-        
       cannonBalls = createSlider(1, 2, 1);
       cannonBalls.position(20, 40);
     } 
     
+    // Initializes variables used in animation. 
     var x=5;
     var y=400;
     var xspeed=1;
@@ -30,32 +32,36 @@
     const acc = 0.2;
     
     
+    // The draw() function runs repeatedly many times a second.
     function draw() {
+        
+        // Sets background graphics. 
         background(135, 206, 250);
         noStroke();
         
         fill(50, 150, 100);
         rect(0, 350, 1000, 50);
         
-        
+        // Makes trees. 
         for (var i = 0; i < 70; i += 10) {
             fill(57, 2, 2);
             rect((i*15)+12, 250, 20, 100)
             fill(50, 150, 100);
-            //level1
+
             ellipse((i+3)*15, 250, 50, 50);
             ellipse(i*15, 250, 50, 50);
-            //level2
+
             ellipse((i-1)*15, 220, 50, 50);
             ellipse((i+1.5)*15, 220, 50, 50);
             ellipse((i+4)*15, 220, 50, 50);
-            //level3
+
             ellipse((i+3)*15, 190, 50, 50);
             ellipse(i*15, 190, 50, 50);
         }
 
         fill(0, 0, 0);
         
+        // Labels sliders.
         text("Gunpowder = " + gunPowder.value() + " lb", gunPowder.x * 2 + gunPowder.width, 30);
         if (cannonBalls.value() == 1) {
             text("Cannonballs = " + cannonBalls.value(), cannonBalls.x * 2 + cannonBalls.width, 50);
@@ -66,15 +72,12 @@
         
         fill(0);
         
-        
- 
+        // Creates more cannonballs if the user adjusts the slider.
         if (cannonBalls.value() == 1) {
             ellipse(x, y, 50, 50);
         }
         if (cannonBalls.value() == 2) {
             ellipse(x, y, 50, 50);
-            
-            
             
             if (y > 400) {
                 x=5;
@@ -85,11 +88,15 @@
             }
         }
         
+        // Increments the x and y (horizontal and vertical) position of the cannonball.
         x+=xspeed;
         y-=yspeed;
+        
+        // Makes the y increment decrease more and more until it reaches zero (max height). 
+        // Then yspeed becomes negative and the double negatives become positive, bringing the ball down.
         yspeed-=acc;
         
-        
+        // Makes the cannon.
         push();
         rotate(radians(50));
         fill(105,105,105);
@@ -98,16 +105,12 @@
         
     }
     
+    // Every time the user clicks, the variables are reset so the cannon can launch again. 
     function mouseClicked() {
         x=5;
         y=400;
         xspeed=gunPowder.value()+4.5;
         yspeed=gunPowder.value()+4.5;
-        if (gunPowder.value() == 0) {
-            text("Cannonballs = infinity", cannonBalls.x * 2 + cannonBalls.width, 50);
-            xSpeed = 0;
-            ySpeed = 0;
-        }
     }
 
     
