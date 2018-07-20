@@ -1,0 +1,92 @@
+<!-- Imports. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+
+<!-- Makes screen take full width and height. -->
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+</style>
+<script>
+
+    function setup() {
+        createCanvas(400, 400);
+    }
+
+    var x = 200;
+    var y = 200;
+    function drawCar() {
+        // Tires.
+        fill(0, 0, 0);
+        ellipse(x+35, y+30, 20, 40);
+        ellipse(x+105, y+30, 20, 40);
+        ellipse(x+35, y+145, 20, 40);
+        ellipse(x+105, y+145, 20, 40);
+
+        // Body.
+        fill(0, 0, 200);
+        rect(x+30, y+30, 80, 100);
+        fill(5, 5, 161);
+        rect(x+30, y-10, 80, 50);
+        rect(x+30, y+130, 80, 50);
+    };
+
+    var speed = 3;
+    var yLines = [10, 120, 230, 340];
+    function draw() {
+        background(200, 200, 200);
+        noStroke();
+        // Grass.
+        fill(50, 150, 100);
+        rect(0, 0, 70, 400);
+        rect(330, 0, 70, 400);
+        
+        drawCar();
+        
+        // Yellow lines.
+        for (var i = 0; i < 5; i++) {
+            fill(232, 232, 0);
+            rect(187, yLines[i], 10, 50);
+
+            yLines[i]+=speed;
+            if (yLines[i] > 400) {
+                yLines[i] = -40;
+            }
+        }
+    }
+    
+    
+    function keyPressed() {
+      switch (keyCode) {
+              /*
+        case 37:
+          if (direction != 'right') {
+            direction = 'left';
+          }
+          break;
+        case 39:
+          if (direction != 'left') {
+            direction = 'right';
+          }
+          break;
+          */
+        case 38:
+            speed += 1; 
+            if (speed > 10) {
+                speed = 10;
+            }
+          break;
+        case 40:
+            speed -= 1;
+            if (speed < 3) {
+                speed = 3;
+            }
+          break;
+      }
+    }
+    
+    
+</script>
