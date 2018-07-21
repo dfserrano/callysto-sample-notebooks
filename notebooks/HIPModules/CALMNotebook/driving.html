@@ -58,25 +58,25 @@
         drawCar();
        
          if (keyIsDown(65)) {
-            x--;
+            x-=5;
             if (x < 0) {
                x = 0;
             }
          }
          if (keyIsDown(68)) {
-            x++;
+            x+=5;
             if (x > 300) {
                x = 300;
             }
          }
          if (keyIsDown(87)) {
-            speed++; 
-            if (speed > 10) {
+            speed+=5; 
+            if (speed > 20) {
                 speed = 10;
             }
          }
          if (keyIsDown(83)) {
-            speed --;
+            speed-=5;
             if (speed < 3) {
                 speed = 3;
             }
