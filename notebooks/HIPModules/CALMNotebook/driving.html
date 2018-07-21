@@ -56,37 +56,25 @@
                 yLines[i] = -40;
             }
         }
-    }
-    
-    
-    function keyPressed() {
-      switch (keyCode) {
-              /*
-        case 37:
-          if (direction != 'right') {
-            direction = 'left';
-          }
-          break;
-        case 39:
-          if (direction != 'left') {
-            direction = 'right';
-          }
-          break;
-          */
-        case 38:
-            speed += 1; 
+       
+         if (keyIsDown(LEFT_ARROW)) {
+            X--;
+         }
+         if (keyIsDown(RIGHT_ARROW)) {
+            x++;
+         }
+         if (keyIsDown(UP_ARROW)) {
+            speed++; 
             if (speed > 10) {
                 speed = 10;
             }
-          break;
-        case 40:
-            speed -= 1;
+         }
+         if (keyIsDown(DOWN_ARROW)) {
+            speed --;
             if (speed < 3) {
                 speed = 3;
             }
-          break;
-      }
+         }
     }
-    
-    
+
 </script>
