@@ -57,19 +57,19 @@
             }
         }
        
-         if (keyIsDown(LEFT_ARROW)) {
-            X--;
+         if (keyIsDown(65)) {
+            x--;
          }
-         if (keyIsDown(RIGHT_ARROW)) {
+         if (keyIsDown(68)) {
             x++;
          }
-         if (keyIsDown(UP_ARROW)) {
+         if (keyIsDown(87)) {
             speed++; 
             if (speed > 10) {
                 speed = 10;
             }
          }
-         if (keyIsDown(DOWN_ARROW)) {
+         if (keyIsDown(83)) {
             speed --;
             if (speed < 3) {
                 speed = 3;
