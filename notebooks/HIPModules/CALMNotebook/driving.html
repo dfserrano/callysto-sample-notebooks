@@ -59,9 +59,15 @@
        
          if (keyIsDown(65)) {
             x--;
+            if (x < 0) {
+               x = 0;
+            }
          }
          if (keyIsDown(68)) {
             x++;
+            if (x > 300) {
+               x = 300;
+            }
          }
          if (keyIsDown(87)) {
             speed++; 
