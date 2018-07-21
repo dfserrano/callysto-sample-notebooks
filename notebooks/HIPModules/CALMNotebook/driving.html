@@ -44,8 +44,6 @@
         rect(0, 0, 70, 400);
         rect(330, 0, 70, 400);
         
-        drawCar();
-        
         // Yellow lines.
         for (var i = 0; i < 5; i++) {
             fill(232, 232, 0);
@@ -56,6 +54,8 @@
                 yLines[i] = -40;
             }
         }
+         
+        drawCar();
        
          if (keyIsDown(65)) {
             x--;
