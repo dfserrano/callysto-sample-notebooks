@@ -14,6 +14,7 @@
     
     var consumptionLevels;
 
+    var yLines = [10, 120, 230, 340];
     function setup() {
         createCanvas(400, 400);
         
@@ -32,11 +33,29 @@
         ellipse(x+105, y+145, 20, 40);
 
         // Body.
+        fill(5, 5, 161);
+        rect(x+30, y-10, 80, 70, 20);
+        rect(x+30, y+110, 80, 70, 20);
         fill(0, 0, 200);
         rect(x+30, y+30, 80, 100);
-        fill(5, 5, 161);
-        rect(x+30, y-10, 80, 50);
-        rect(x+30, y+130, 80, 50);
+    };
+    
+    var xOncoming = 60;
+    var yOncoming = -200;
+    function drawOncoming() {
+        // Tires.
+        fill(0, 0, 0);
+        ellipse(xOncoming+35, yOncoming+30, 20, 40);
+        ellipse(xOncoming+105, yOncoming+30, 20, 40);
+        ellipse(xOncoming+35, yOncoming+145, 20, 40);
+        ellipse(xOncoming+105, yOncoming+145, 20, 40);
+
+        // Body.
+        fill(139,0,0);
+        rect(xOncoming+30, yOncoming-10, 80, 70, 20);
+        rect(xOncoming+30, yOncoming+110, 80, 70, 20);
+        fill(210, 0, 0);
+        rect(xOncoming+30, yOncoming+40, 80, 100);
     };
 
     var speed = 3;
@@ -44,10 +63,16 @@
     function draw() {
         background(200, 200, 200);
         noStroke();
+        
         // Grass.
         fill(50, 150, 100);
         rect(0, 0, 70, 400);
         rect(330, 0, 70, 400);
+        
+        // Rails.
+        fill(105, 105, 105);
+        rect(60, 0, 10, 400);
+        rect(330, 0, 10, 400);
         
         // Yellow lines.
         for (var i = 0; i < 5; i++) {
@@ -60,7 +85,15 @@
             }
         }
         
+        yOncoming+=10;
+        if (yOncoming > 2000) {
+            yOncoming = -200;
+        }
+        
+        drawOncoming();
+        
         fill(0);
+        textSize(12);
         if (consumptionLevels.value() == 1) {
             text("Sober", consumptionLevels.x + 10 + consumptionLevels.width, 30);
             if (keyIsDown(65)) {
@@ -157,7 +190,33 @@
          
         drawCar();
         
+        textSize(20);
+        if (x > 230) {
+            fill(255, 0, 0);
+            text("Game Over.", 150, 200);
+            Program.restart();
+        }
+        if (x < 30) {
+            fill(255, 0, 0);
+            text("Game Over.", 150, 200);
+            Program.restart();
+        }
         
+        if (x >= xOncoming && x <= xOncoming+80 && y >= yOncoming && y <= yOncoming+180) {
+            fill(255, 0, 0);
+            text("Game Over.", 150, 200);
+            Program.restart();
+        }
+        if (x+80 >= xOncoming && x+80 <= xOncoming+80 && y >= yOncoming && y <= yOncoming+180) {
+            fill(255, 0, 0);
+            text("Game Over.", 150, 200);
+            Program.restart();
+        }
+        if (x >= xOncoming && x <= xOncoming+80 && y+180 >= yOncoming && y+180 <= yOncoming+180) {
+            fill(255, 0, 0);
+            text("Game Over.", 150, 200);
+            Program.restart();
+        }
          
     }
 
