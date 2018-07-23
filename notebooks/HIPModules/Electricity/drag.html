@@ -12,9 +12,10 @@
    //background setup
    function setup() { 
       createCanvas(800, 400);
-      this.x1 = 100
-      this.y1 = 50
-      this.dia = 200
+      this.x1 = 100;
+      this.y1 = 50;
+      this.dia = 200;
+   rectMode(CENTER);
 
     } 
     
@@ -39,12 +40,12 @@
       strokeWeight(5);
       fill (0, 153, 51);
       rect (this.x1, this.y1, 200, 30);  
-
-      function mousePressed () {
-      let d = dist(this.x1, this.y1, mouseX, mouseY)
-      if (d < this.dia) {
-          this.x1= mouseX
-          this.y1= mouseY
+    }
+    
+    function mouseDragged () {
+      if(mouseX >= x1-50 && mouseX <= x1+250 && mouseY >= y1-50 && mouseY <= y1+80) {  
+      this.x1 = mouseX;
+      this.y1 = mouseY;
     }
     }
 
