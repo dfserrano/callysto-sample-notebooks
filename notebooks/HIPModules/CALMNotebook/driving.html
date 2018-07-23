@@ -57,6 +57,24 @@
         fill(210, 0, 0);
         rect(xOncoming+30, yOncoming+40, 80, 100);
     };
+    
+    var xTree = 200;
+    var yTree = -500;
+    function drawTree() {
+        fill(57, 2, 2);
+        rect(xTree+50, yTree, 100, 20);
+        fill(50, 150, 100);
+
+        ellipse(xTree+50, yTree, 50, 50);
+        ellipse(xTree+50, yTree+20, 50, 50);
+        
+        ellipse(xTree+20, yTree-10, 50, 50);
+        ellipse(xTree+20, yTree+10, 50, 50);
+        ellipse(xTree+20, yTree+30, 50, 50);
+
+        ellipse(xTree-10, yTree, 50, 50);
+        ellipse(xTree-10, yTree+20, 50, 50);
+    }
 
     var speed = 3;
     var yLines = [10, 120, 230, 340];
@@ -90,7 +108,13 @@
             yOncoming = -200;
         }
         
+        yTree+=5;
+        if (yTree > 1000) {
+            yTree = -200;
+        }
+        
         drawOncoming();
+        drawTree();
         
         fill(0);
         textSize(12);
@@ -202,17 +226,29 @@
             Program.restart();
         }
         
-        if (x >= xOncoming && x <= xOncoming+80 && y >= yOncoming && y <= yOncoming+180) {
+        if (x >= xOncoming && x <= xOncoming+60 && y >= yOncoming && y <= yOncoming+180) {
             fill(255, 0, 0);
             text("Game Over.", 150, 200);
             Program.restart();
         }
-        if (x+80 >= xOncoming && x+80 <= xOncoming+80 && y >= yOncoming && y <= yOncoming+180) {
+        if (x+60 >= xOncoming && x+60 <= xOncoming+60 && y >= yOncoming && y <= yOncoming+180) {
             fill(255, 0, 0);
             text("Game Over.", 150, 200);
             Program.restart();
         }
-        if (x >= xOncoming && x <= xOncoming+80 && y+180 >= yOncoming && y+180 <= yOncoming+180) {
+        if (x >= xOncoming && x <= xOncoming+60 && y+180 >= yOncoming && y+180 <= yOncoming+180) {
+            fill(255, 0, 0);
+            text("Game Over.", 150, 200);
+            Program.restart();
+        }
+        
+        if (x >= xTree-60 && x <= xTree+80 && yTree >= y && yTree-5 <= y) {
+            fill(255, 0, 0);
+            text("Game Over.", 150, 200);
+            Program.restart();
+        }
+        
+        if (x+60 >= xTree-60 && x+60 <= xTree+80 && yTree >= y+180 && yTree-5 <= y+180) {
             fill(255, 0, 0);
             text("Game Over.", 150, 200);
             Program.restart();
