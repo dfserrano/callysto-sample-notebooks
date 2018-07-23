@@ -11,9 +11,14 @@
     }
 </style>
 <script>
+    
+    var consumptionLevels;
 
     function setup() {
         createCanvas(400, 400);
+        
+        consumptionLevels = createSlider(1, 3, 1);
+        consumptionLevels.position(20, 20);
     }
 
     var x = 200;
@@ -54,33 +59,106 @@
                 yLines[i] = -40;
             }
         }
+        
+        fill(0);
+        if (consumptionLevels.value() == 1) {
+            text("Sober", consumptionLevels.x + 10 + consumptionLevels.width, 30);
+            if (keyIsDown(65)) {
+                x-=5;
+                if (x < 0) {
+                   x = 0;
+                }
+             }
+             if (keyIsDown(68)) {
+                x+=5;
+                if (x > 300) {
+                   x = 300;
+                }
+             }
+             if (keyIsDown(87)) {
+                speed+=5; 
+                if (speed > 15) {
+                    speed = 15;
+                }
+             }
+             if (keyIsDown(83)) {
+                speed-=5;
+                if (speed < 3) {
+                    speed = 3;
+                }
+             }
+        }
+        if (consumptionLevels.value() == 2) {
+            text("Intoxicated", consumptionLevels.x + 10 + consumptionLevels.width, 30);
+            if (keyIsDown(68)) {
+                x-=5;
+                if (x < 0) {
+                   x = 0;
+                }
+             }
+             if (keyIsDown(65)) {
+                x+=5;
+                if (x > 300) {
+                   x = 300;
+                }
+             }
+             if (keyIsDown(83)) {
+                speed+=5; 
+                if (speed > 15) {
+                    speed = 15;
+                }
+             }
+             if (keyIsDown(87)) {
+                speed-=5;
+                if (speed < 3) {
+                    speed = 3;
+                }
+             }
+        }
+        if (consumptionLevels.value() == 3) {
+            text("Wasted", consumptionLevels.x + 10 + consumptionLevels.width, 30);
+            if (keyIsDown(68)) {
+                x-=5;
+                if (x < 0) {
+                   x = 0;
+                }
+                if (random(0, 4) < 1) {
+                    x+=10;
+                }
+             }
+             if (keyIsDown(65)) {
+                x+=5;
+                if (x > 300) {
+                   x = 300;
+                }
+                if (random(0, 4) < 1) {
+                    x-=10;
+                }
+             }
+             if (keyIsDown(83)) {
+                speed+=5; 
+                if (speed > 15) {
+                    speed = 15;
+                }
+                if (random(0, 4) < 1) {
+                    speed-=10;
+                }
+             }
+             if (keyIsDown(87)) {
+                speed-=5;
+                if (speed < 3) {
+                    speed = 3;
+                }
+                if (random(0, 4) < 1) {
+                    speed+=10;
+                }
+             }
+        }
          
         drawCar();
-       
-         if (keyIsDown(65)) {
-            x-=5;
-            if (x < 0) {
-               x = 0;
-            }
-         }
-         if (keyIsDown(68)) {
-            x+=5;
-            if (x > 300) {
-               x = 300;
-            }
-         }
-         if (keyIsDown(87)) {
-            speed+=5; 
-            if (speed > 15) {
-                speed = 15;
-            }
-         }
-         if (keyIsDown(83)) {
-            speed-=5;
-            if (speed < 3) {
-                speed = 3;
-            }
-         }
+        
+        
+         
     }
 
 </script>
