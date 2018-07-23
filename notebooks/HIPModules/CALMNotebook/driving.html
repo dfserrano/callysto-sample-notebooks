@@ -242,13 +242,18 @@
             Program.restart();
         }
         
-        if (x >= xTree-60 && x <= xTree+80 && yTree >= y && yTree-5 <= y) {
+        if (x >= xTree-60 && x <= xTree+80 && y <= yTree && y >= yTree-20) {
             fill(255, 0, 0);
             text("Game Over.", 150, 200);
             Program.restart();
         }
         
-        if (x+60 >= xTree-60 && x+60 <= xTree+80 && yTree >= y+180 && yTree-5 <= y+180) {
+        if (x+60 >= xTree-60 && x+60 <= xTree+80 && y <= yTree && y >= yTree-20) {
+            fill(255, 0, 0);
+            text("Game Over.", 150, 200);
+            Program.restart();
+        }
+        if (x >= xTree-60 && x <= xTree+80 && y+180 <= yTree && y+180 >= yTree-20) {
             fill(255, 0, 0);
             text("Game Over.", 150, 200);
             Program.restart();
