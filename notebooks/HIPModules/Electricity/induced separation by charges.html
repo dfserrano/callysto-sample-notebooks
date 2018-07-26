@@ -9,10 +9,11 @@
 </style>
 <script>
     
+   var attractor;
    //background setup
    function setup() { 
       createCanvas(800, 400);
-      rectMode(CENTER);       
+      rectMode(CENTER); 
       this.x1 = 170;
       this.y1 = 70;
       this.dia = 200;
@@ -42,13 +43,34 @@
       this.yi3= 70;
       this.yi4= 85;
       this.yi5= 100;
-
-
+      this.x01 = 520;
+      this.y01 = 70;
+      this.x02 = 530;
+      this.y02 = 80; 
+      this.x10 = 520;
+      this.x11 = 530;
+      this.x12 = 520;
+      this.x13 = 530;
+      this.y10 = 70;
+      this.y11 = 80;
+      this.y12 = 70;
+      this.y13 = 80;
+      this.x14 = 520;
+      this.x15 = 530;
+      this.y14 = 70;
+      this.y15 = 80;
+      this.x001= 530;
+      this.x002= 570;
+      this.y001= 330;
    } 
     
    function draw()  {
       background (255, 255, 204);
-      
+   //induced separation of charges
+      noStroke();
+      textSize(30);
+      fill (0, 0, 0);
+      text ("Induced Separation of Charges", 50, 250);
    //circle of the electroscope       
       fill (255, 229, 204);
       strokeWeight(5);
@@ -57,32 +79,33 @@
 
    //sticks of the electroscope
       strokeWeight(5);     
-      stroke(255, 255, 51);
-      line (550, 230, 550, 150);
+      stroke(153, 153, 255);
+      line (550, 230, 570, 230);
       line (530, 230, 570, 230);
+      line (550, 150, 550, 230);
       
       strokeWeight(5);
-      stroke(255, 255, 51);
-      line (530, 230, 530, 330);
-      line (570, 230, 570, 330);
+      stroke(153, 153, 255);
+      line (530, 230, this.x001, this.y001);
+      line (570, 230, this.x002, this.y001);
    
     //rod 
       strokeWeight(5);
       stroke (0, 0, 0);
       fill (0, 153, 51);
       rect (this.x1, this.y1, 200, 30); 
-       
-       
+      
+        
     //Negative Charges on Electroscope
       strokeWeight (5);
-      stroke (102, 102, 255);
-      line (540, 200, 560, 200);
-      line (520, 310, 540, 310);
-      line (520, 270, 540, 270);
-      line (560, 310, 580, 310);
-      line (560, 270, 580, 270);
-      line (550, 120, 570, 120);
-      line (520, 100, 540, 100);
+      stroke (0, 204, 0);
+      line (this.x14+20, this.y14+130, this.x15+30, this.y15+120);
+      line (this.x01, this.y01+240, this.x02+10, this.y02+230);
+      line (this.x01, this.y01+200, this.x02+10, this.y02+190);
+      line (this.x01+40, this.y01+240, this.x02+50, this.y02+230);
+      line (this.x01+40, this.y01+200, this.x02+50, this.y02+190);
+      line (this.x10+30, this.y10+50, this.x11+40, this.y11+40);
+      line (this.x12, this.y12+30, this.x13+10, this.y13+20);
        
     //Positive Charges on Electroscope
       strokeWeight (5);
@@ -101,10 +124,7 @@
       line (520, 86, 540, 86);
       line (550, 107, 570, 107);
       line (560, 97, 560, 117);
-      
-
-
-       
+     
     //Negative Charges on Rod
       strokeWeight(4);
       stroke (0, 0, 0);
@@ -124,7 +144,7 @@
       line (this.xl4, this.yl5, this.xi4, this.yi5);
       line (this.xl5, this.yl5, this.xi5, this.yi5);
       line (this.xl6, this.yl5, this.xi6, this.yi5);
-      line (this.xl7, this.yl5, this.xi7, this.yi5); 
+      line (this.xl7, this.yl5, this.xi7, this.yi5);     
     }
 
 
@@ -159,7 +179,27 @@
       this.yi3 = mouseY;
       this.yi4 = mouseY +15;
       this.yi5 = mouseY +30;
-     } 
+      }
+      if (mouseX> 200 && mouseX< 210){
+      this.y01 += 5;
+      this.y02 += 5;
+      }
+      if (mouseX> 210 && mouseX< 220){
+      this.y10 += 30;
+      this.y11 += 30;
+      this.y12 += 30;
+      this.y13 += 30;
+      this.y14 += 25;
+      this.y15 += 25;        
+      }
+      if (mouseX > 220 && mouseX< 225) {
+      this.x001 = 510;
+      this.x002 = 600;
+      this.y001 = 310;
+      }
     }
+
+    
+    
 
 </script>

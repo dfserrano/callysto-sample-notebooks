@@ -1,0 +1,252 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+</style>
+<script>
+    
+   var attractor;
+   //background setup
+   function setup() { 
+      createCanvas(800, 400);
+      rectMode(CENTER); 
+      this.x1 = 170;
+      this.y1 = 70;
+      this.dia = 200;
+      this.xl1= 80;
+      this.xl2= 110;
+      this.xl3= 140;
+      this.xl4= 170;
+      this.xl5= 200;
+      this.xl6= 230;
+      this.xl7= 260;
+      this.xl8= 280;
+      this.yl1 = 40;
+      this.yl2 = 55;
+      this.yl3 = 70;
+      this.yl4 = 85;
+      this.yl5 = 100;
+      this.xi1 = 100;
+      this.xi2 = 130;
+      this.xi3 = 160;
+      this.xi4 = 190;
+      this.xi5 = 220;
+      this.xi6 = 250; 
+      this.xi7 = 280;
+      this.xi8 = 300;
+      this.yi1= 40;
+      this.yi2= 55;
+      this.yi3= 70;
+      this.yi4= 85;
+      this.yi5= 100;
+      this.x01 = 520;
+      this.y01 = 70;
+      this.x02 = 530;
+      this.y02 = 80; 
+      this.x10 = 520;
+      this.x11 = 530;
+      this.x12 = 520;
+      this.x13 = 530;
+      this.y10 = 70;
+      this.y11 = 80;
+      this.y12 = 70;
+      this.y13 = 80;
+      this.x14 = 520;
+      this.x15 = 530;
+      this.y14 = 70;
+      this.y15 = 80;
+      this.x001= 530;
+      this.x002= 570;
+      this.y001= 330;
+      this.x0001;
+      this.x0002;
+      this.y0001;
+      this.y0002;
+      this.x1001;
+      this.x2001;
+      this.x3001;
+      this.x4001;
+      this.x1002;
+      this.x2002;
+      this.x3002;
+      this.x4002;
+      this.y1001;
+      this.y2001;
+      this.y3001;
+      this.y4001;
+      this.y1002;
+      this.y2002;
+      this.y3002;
+      this.y4002;       
+   } 
+    
+   function draw()  {
+      background (255, 255, 204);
+   //induced separation of charges
+      noStroke();
+      textSize(30);
+      fill (0, 0, 0);
+      text ("Charging By Conduction", 50, 250);
+   //circle of the electroscope       
+      fill (255, 229, 204);
+      strokeWeight(5);
+      stroke (0, 0, 0);
+      ellipse (550, 100, 90, 90);
+
+   //sticks of the electroscope
+      strokeWeight(5);     
+      stroke(153, 153, 255);
+      line (550, 230, 570, 230);
+      line (530, 230, 570, 230);
+      line (550, 150, 550, 230);
+      
+      strokeWeight(5);
+      stroke(153, 153, 255);
+      line (530, 230, this.x001, this.y001);
+      line (570, 230, this.x002, this.y001);
+   
+    //rod 
+      strokeWeight(5);
+      stroke (0, 0, 0);
+      fill (0, 153, 51);
+      rect (this.x1, this.y1, 200, 30); 
+      
+        
+    //Negative Charges on Electroscope
+      strokeWeight (5);
+      stroke (0, 204, 0);
+      line (this.x14+20, this.y14+130, this.x15+30, this.y15+120);
+      line (this.x01, this.y01+240, this.x02+10, this.y02+230);
+      line (this.x01, this.y01+200, this.x02+10, this.y02+190);
+      line (this.x01+40, this.y01+240, this.x02+50, this.y02+230);
+      line (this.x01+40, this.y01+200, this.x02+50, this.y02+190);
+      line (this.x10+30, this.y10+50, this.x11+40, this.y11+40);
+      line (this.x12, this.y12+30, this.x13+10, this.y13+20);
+       
+    //Positive Charges on Electroscope
+      strokeWeight (5);
+      stroke (255, 51, 51);
+      line (540, 187, 560, 187);
+      line (550, 177, 550, 197);
+      line (560, 257, 580, 257);
+      line (570, 247, 570, 267);
+      line (530, 247, 530, 267);
+      line (520, 257, 540, 257);
+      line (520, 297, 540, 297);
+      line (560, 297, 580, 297);
+      line (570, 287, 570, 307);
+      line (530, 287, 530, 307);
+      line (530, 76, 530, 96);
+      line (520, 86, 540, 86);
+      line (550, 107, 570, 107);
+      line (560, 97, 560, 117);
+     
+    //Negative Charges on Rod
+      strokeWeight(4);
+      stroke (0, 0, 0);
+      line (this.xl1, this.yl1, this.xi1, this.yi1);
+      line (this.xl2, this.yl1, this.xi2, this.yi1);
+      line (this.xl3, this.yl1, this.xi3, this.yi1);
+      line (this.xl4, this.yl1, this.xi4, this.yi1);
+      line (this.xl5, this.yl1, this.xi5, this.yi1);
+      line (this.xl6, this.yl1, this.xi6, this.yi1);
+      line (this.xl7, this.yl1, this.xi7, this.yi1); 
+      line (this.xl8, this.yl2, this.xi8, this.yi2);
+      line (this.xl8, this.yl3, this.xi8, this.yi3);
+      line (this.xl8, this.yl4, this.xi8, this.yi4);
+      line (this.xl1, this.yl5, this.xi1, this.yi5);
+      line (this.xl2, this.yl5, this.xi2, this.yi5);
+      line (this.xl3, this.yl5, this.xi3, this.yi5);
+      line (this.xl4, this.yl5, this.xi4, this.yi5);
+      line (this.xl5, this.yl5, this.xi5, this.yi5);
+      line (this.xl6, this.yl5, this.xi6, this.yi5);
+      line (this.xl7, this.yl5, this.xi7, this.yi5);   
+    
+    //new charges 
+      line (this.x0001, this.y0001, this.x0002, this.y0002);
+      line (this.x1001, this.y1001, this.x1002, this.y1002);
+      line (this.x2001, this.y2001, this.x2002, this.y2002);
+      line (this.x3001, this.y3001, this.x3002, this.y3002);
+      line (this.x4001, this.y4001, this.x4002, this.y4002);
+    }
+    
+    function mouseDragged () {
+      if(mouseX >= x1-50 && mouseX <= x1+250 && mouseY >= y1-50 && mouseY <= y1+80) {  
+      this.x1 = mouseX;
+      this.y1 = mouseY;
+      this.xl1 = mouseX -85;
+      this.xl2 = mouseX -55;
+      this.xl3 = mouseX -25;
+      this.xl4 = mouseX +5;
+      this.xl5 = mouseX +35;
+      this.xl6 = mouseX +65;
+      this.xl7 = mouseX +95;
+      this.xl8 = mouseX +115;
+      this.yl1 = mouseY -30; 
+      this.yl2 = mouseY -15;
+      this.yl3 = mouseY;
+      this.yl4 = mouseY +15;
+      this.yl5 = mouseY +30;
+      this.xi1 = mouseX -65;
+      this.xi2 = mouseX -35;
+      this.xi3 = mouseX -5;
+      this.xi4 = mouseX +25;
+      this.xi5 = mouseX +55;
+      this.xi6 = mouseX +85;
+      this.xi7 = mouseX +115;
+      this.xi8 = mouseX +135;
+      this.yi1 = mouseY -30; 
+      this.yi2 = mouseY -15;
+      this.yi3 = mouseY;
+      this.yi4 = mouseY +15;
+      this.yi5 = mouseY +30;
+      }
+      if (mouseX> 200 && mouseX< 210){
+      this.y01 += 5;
+      this.y02 += 5;
+      }
+      if (mouseX> 210 && mouseX< 220){
+      this.y10 += 30;
+      this.y11 += 30;
+      this.y12 += 30;
+      this.y13 += 30;
+      this.y14 += 25;
+      this.y15 += 25;        
+      }
+      if (mouseX > 370) {
+      this.x001 = 510;
+      this.x002 = 600;
+      this.y001 = 310;
+      }
+      if (mouseX> 370) {         
+      this.x0001 = 520;
+      this.x0002 = 540;
+      this.y0001 = 120;
+      this.y0002 = 120;
+      this.x1001 = 560;
+      this.x2001 = 520;
+      this.x3001 = 560;
+      this.x4001 = 545;
+      this.x1002 = 580;
+      this.x2002 = 540;
+      this.x3002 = 580;
+      this.x4002 = 565;
+      this.y1001 = 120;
+      this.y2001 = 80;
+      this.y3001 = 80;
+      this.y4001 = 90;
+      this.y1002 = 120;
+      this.y2002 = 80;
+      this.y3002 = 80;
+      this.y4002 = 90;  
+      }
+    }
+
+    
+    
+
+</script>
