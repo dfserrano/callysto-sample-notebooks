@@ -62,6 +62,22 @@
       this.x001= 530;
       this.x002= 570;
       this.y001= 330;
+      this.x00001;
+      this.y00001;
+      this.x00002;
+      this.y00002;
+      this.x10001;
+      this.y10001;
+      this.x10002;
+      this.y10002;
+      this.x20001;
+      this.y20001;
+      this.x20002;
+      this.y20002;
+      this.x30001;
+      this.y30001;
+      this.x30002;
+      this.y30002;
    } 
     
    function draw()  {
@@ -70,7 +86,7 @@
       noStroke();
       textSize(30);
       fill (0, 0, 0);
-      text ("Induced Separation of Charges", 50, 250);
+      text ("Chagring By Induction", 50, 250);
    //circle of the electroscope       
       fill (255, 229, 204);
       strokeWeight(5);
@@ -144,7 +160,13 @@
       line (this.xl4, this.yl5, this.xi4, this.yi5);
       line (this.xl5, this.yl5, this.xi5, this.yi5);
       line (this.xl6, this.yl5, this.xi6, this.yi5);
-      line (this.xl7, this.yl5, this.xi7, this.yi5);     
+      line (this.xl7, this.yl5, this.xi7, this.yi5);    
+   
+   //Grounding 
+      line (this.x00001, this.y00001, this.x00002, this.y00002);
+      line (this.x10001, this.y10001, this.x10002, this.y10002);
+      line (this.x20001, this.y20001, this.x20002, this.y20002);
+      line (this.x30001, this.y30001, this.x30002, this.y30002);
     }
 
 
@@ -192,11 +214,44 @@
       this.y14 += 25;
       this.y15 += 25;        
       }
-      if (mouseX > 220) {
+      if (mouseX > 240) {
       this.x001 = 510;
       this.x002 = 600;
       this.y001 = 310;
       }
+      if (mouseX > 230) {
+      this.x10 =10000;
+      this.x11 =10000;
+      this.x12 =10000;
+      this.x13 =10000;
+      this.x14 =10000;
+      this.x15 =10000;
+      }
+      if (mouseX > 220) {
+      this.x00001 =590;
+      this.y00001 =70;
+      this.x00002 =660;
+      this.y00002 =50;
+      this.x10001 =660;
+      this.y10001 =30;
+      this.x10002 =660;
+      this.y10002 =70;
+      this.x20001 =680;
+      this.x20002 =680;
+      this.y20001 =35;
+      this.y20002 =65;
+      this.x30001 =700;
+      this.y30001 =40;
+      this.x30002 =700;
+      this.y30002 =60;
+      
+          
+//       line (this.x00001, this.y00001, this.x00002, this.y00002);
+//       line (this.x10001, this.y10001, this.x10002, this.y10002);
+//       line (this.x20001, this.y20001, this.x20002, this.y20002);
+//       line (this.x30001, this.y30001, this.x30002, this.y30002);
+     
+    }
     }
 
     
