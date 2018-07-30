@@ -1,0 +1,53 @@
+<!-- Imports. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+
+<!-- Makes screen take full width and height. -->
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+</style>
+<script>
+    
+    // Initializes slider variable.
+    var consumption;
+    
+    // Initial set up of canvas
+    function setup() {
+        createCanvas(600, 400);
+        
+        // Creates slider.
+        consumption = createSlider(31, 60, 31);
+        consumption.position(20, 20);
+    }
+    
+    // Initializes variables used in animation.
+    var risk = [2];
+    for (var i = 0; i < 60; i++) {
+        risk.push(risk[i]+0.07);
+    }
+    
+    // The draw() function runs repeatedly many times a second.
+    function draw() {
+        
+        // Sets background graphics. 
+        background(0);
+        noStroke();
+        textSize(20);
+        
+        // Makes interactive bar chart.
+        fill(255, 200, 0);
+        rect(0, 0, consumption.value()*2, 200);
+        fill(255, 0, 0);
+        rect(0, 200, risk[consumption.value()-31]*100, 200);
+        
+        // Labels bar chart.
+        fill(255, 255, 255);
+        text("Daily Consumption = " + consumption.value() + " grams", consumption.x + 10 + consumption.width, 30);
+        text("Risk of Liver Disease = " + round(risk[consumption.value()-31]) + " times greater than those who abstain", 10, 300); 
+        
+    }
+</script>

@@ -1,0 +1,131 @@
+<!-- Imports. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+
+<!-- Makes screen take full width and height. -->
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+</style>
+<script>
+    
+    // Initializing slider variable.
+    var navigation;
+    
+    // Inital set up of canvas.
+    function setup() {
+        createCanvas(400, 400);
+        
+        // Creates slider.
+        navigation = createSlider(0, 1200, 1);
+        navigation.position(105, 350);
+    }
+    
+    // The draw() function runs repeatedly many times a second.
+    function draw() {
+        
+        // Enables scrolling through infographic.
+        var x = -navigation.value();
+        
+        // Sets background graphics.
+        background(255,248,220);
+        noStroke();
+        
+        // Draws Phase 1 bar chart.
+        fill(220,20,60);
+        rect(x+10, 0, 50, 400);
+        textSize(20);
+        text("Total Aboriginal Population", x+70, 50);
+        fill(65,105,225);
+        rect(x+60, 100, 50, 300);
+        textSize(15);
+        text("75% of Aboriginal Population \nfeel alcoholism is a problem \nin their community", x+120, 120);
+        fill(34,139,34);
+        rect (x+110, 268, 50, 400*.33);
+        text("33% of Aboriginal Population \nindicate alcoholism is a problem \nin their own family/household", x+120, 200);
+        fill(138,43,226);
+        rect (x+160, 300, 50, 400*.25);
+        text("25% of Aboriginal \nPopulation admit to \nhaving a personal \nproblem with alcoholism", x+220, 280);
+        
+        // Draws Phase 2 bar chart.
+        fill(65,105,225);
+        text("Only 66% of reserve First Nations adults \nconsume alcohol...", x+410, 20);
+        rect(x+410, 136, 50, 400*.66);
+        fill(220,20,60);
+        text("...compared to 76% of the \ngeneral population", x+550, 39);
+        rect(x+460, 96, 50, 400*.76);
+        fill(0);
+        text("This discrepancy might indicate \nthat those who drink are heavy \ndrinkers. This conclusion makes \nsense when one considers that \nmore First Nations people are \nadmitted to BC and Alberta \nhospitals for substance abuse \nissues more frequently than other \nresidents", x+540, 100);
+        // Draws Ambulance.
+        // Siren.
+        fill(255, 0, 0);
+        ellipse(x+580, 310, 20, 20);
+        // Body.
+        fill(255, 255, 255);
+        rect(x+600, 280, 150, 100, 20);
+        rect(x+550, 310, 70, 70, 20);
+        // Cross.
+        fill(255, 0, 0);
+        rect(x+670, 300, 20, 60);
+        rect(x+650, 320, 60, 20);
+        // Tires.
+        fill(0);
+        ellipse(x+590, 380, 30, 30);
+        ellipse(x+700, 380, 30, 30);
+        
+        // Draws Phase 3 bar chart. 
+        fill(0);
+        textSize(20);
+        text("Suicide \nrates per \n100,000 \npeople", x+810, 20);
+        textSize(15);
+        text("First Nations rates are twice the \nnational average, and Inuit rates \nare six to eleven times higher. \nThese are some of the highest \nsuicide rates in the world that \nare continuing to climb, \nparticularly among youth.", x+970, 20);
+        text("People often abuse substances \nto suppress negative emotions \nor escape their problems, but \naddictions usually compound \nthese issues, leading to feelings \nof hopelessness combined with \nfewer inhibitions, which can \nincrease one's inclination \ntowards suicide.", x+970, 170);
+        
+        textSize(12);
+        fill(34,139,34);
+        rect(x+810, 364, 50, 12*3);
+        text("      All \nCanadians", x+810, 300);
+        text("12", x+828, 330);
+        
+        fill(65,105,225);
+        rect(x+860, 328, 50, 24*3);
+        text("  First \nNations", x+865, 270);
+        text("24", x+877, 300);
+        
+        fill(220,20,60);
+        rect(x+910, 5, 50, 135*3);
+        text("Inuit", x+880, 120);
+        text("135", x+880, 140);
+        
+        // Draws Phase 4 bar chart.
+        fill(138,43,226);
+        rect(x+1210, 16, 50, 400*.16*6);
+        text("  First \nNations", x+1270, 40);
+        text("16%", x+1277, 75);
+        fill(34,139,34);
+        rect(x+1260, 208, 50, 400*.08*6);
+        text("      All \nCanadians", x+1270, 150);
+        text("8.0%", x+1285, 180);
+        fill(65,105,225);
+        rect(x+1310, 328, 50, 400*.03*6);
+        text("Inuit", x+1320, 300);
+        text("3.0%", x+1320, 320);
+        
+        textSize(20);
+        fill(0);
+        text("Major Depression Rates", x+1350, 40);
+        textSize(12);
+        text("First Nations populations experience \nmajor depression at double the national \naverage, while the Inuit population's \nlow depression rates despite high suicide \nrates might indicate that current systems \nused to measure the condition aren't as \naccurate for the Inuit, or depression among \nmen may not be as readily identified \nsince it might manifest directly as a \nsubstance abuse problem or voilence.", x+1355, 65);
+        text("People may turn to substance abuse \nsearching for relief. They may suffer from \nmental health conditions like depression or \nanxiety. They become dependent on these \nsubstances and suffer from severe \nwithdrawal symptoms that only serve to \nworsen their mental conditions.", x+1355, 220);
+        
+        // Slider graphics.
+        textSize(12);
+        fill(139,69,19);
+        rect(95, 345, 210, 25, 20);
+        fill(255, 255, 255);
+        text("Navigate", navigation.x + 10 + navigation.width, 360);
+    }
+</script>   
