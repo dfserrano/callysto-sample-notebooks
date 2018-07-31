@@ -1,4 +1,4 @@
-def graph(ave_volume):
+def graph(N, ave_volume):
     # Imports, borrowing code from a 'library' that is used to generate the graph.
     import plotly.offline as py
     from plotly.offline import init_notebook_mode, iplot
@@ -13,7 +13,7 @@ def graph(ave_volume):
     trials = []
     tests = []
     
-    for i in range(10):
+    for i in range(N):
         
         yielded = random.uniform((ave_volume-(rand.random_sample()*10)), (ave_volume+rand.random_sample()*10))
 
@@ -65,3 +65,6 @@ def graph(ave_volume):
     # Renders graph.
     fig = go.Figure(data=data, layout=layout)
     py.iplot(fig, filename='grouped-bar')
+    
+    # Returns list of data for the table.
+    return tests 
