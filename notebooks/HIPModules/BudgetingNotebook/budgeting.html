@@ -121,9 +121,9 @@
         fill(0);
         
         var msg = "You start the month with some savings, and you are planning on moving\ninto a new place. Which place should you rent?\n(Assume all locations are ideal and utilities are included.)";
-        var opt1 = "Option 1: Apartment ($1000/month)";
-        var opt2 = "Option 2: Condo ($1500/month)";
-        var opt3 = "Option 3: Suburban Bungalow ($2000/month)";
+        var opt1 = "Option 1: Apartment ($2500)";
+        var opt2 = "Option 2: Condo ($4000)";
+        var opt3 = "Option 3: Suburban Bungalow ($5000)";
         
         text(msg, 15, 35);
         text(opt1, 50, 150);
@@ -137,7 +137,26 @@
         textFont('Verdana');
         textSize(20);
         fill(0);
+        var valmsg = "";
         
-        text(val, 50, 50);
+        if(val == 0) {
+            valmsg = "Your house was broken into and $1000 was stolen.";
+            bank -= 1000;
+        }else if(val == 1) {
+            valmsg = "It has been pretty uneventful lately."
+        }else if(val == 2) {
+            valmsg = "You scored a date! And it went relatively well.";
+            happiness += 3;
+        }
+        
+        var msg = "Now that you are settled in and payed off rent for the next few month, you decided to figure out your meal plan. What do you plan on doing?";
+        var opt1 = "Option 1: Exclusively eat in every day and buy cheap ingredients. ($500)";
+        var opt2 = "Option 2: Eat out sometimes and ";
+        var opt3 = "Option 3: Suburban Bungalow ($2000/month)";
+        
+        text(msg, 15, 35);
+        text(opt1, 50, 150);
+        text(opt2, 50, 180);
+        text(opt3, 50, 210);
     }
 </script>
