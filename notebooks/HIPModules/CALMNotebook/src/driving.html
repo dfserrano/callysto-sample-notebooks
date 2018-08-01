@@ -24,6 +24,9 @@
         consumptionLevels.position(100, 20);
     }
     
+    // Initializes variable needed for animation.
+    var speed = 3;
+    
     // Initializes player car variables. 
     var x = 200;
     var y = 200;
@@ -87,9 +90,6 @@
         ellipse(xTree-10, yTree+20, 50, 50);
     }
     
-    // Initializes variable needed for animation.
-    var speed = 3;
-    
     // Initializes road lines y-positions. 
     var yLines = [10, 120, 230, 340];
     
@@ -124,13 +124,13 @@
         }
         
         // Increments oncoming car y-position so it moves across the screen at repeated intervals.
-        yOncoming+=5;
+        yOncoming+=speed+1;
         if (yOncoming > 1000) {
             yOncoming = -200;
         }
         
         // Increments tree's y-position so it moves across the screen at repeated intervals.
-        yTree+=5;
+        yTree+=speed+1;
         if (yTree > 1000) {
             yTree = -200;
         }
@@ -303,6 +303,11 @@
             Program.restart();
         }
          
+    }
+    
+    function mousePressed() {
+        yOncoming = -500;
+        yTree = -1000;
     }
 
 </script>
