@@ -11,7 +11,7 @@ def graph():
     init_notebook_mode(connected=True)
     
     # Accesses data file.
-    df = pd.read_csv('src/affectsofsubstanceabuse.csv')
+    df = pd.read_csv('src/effectsofsubstanceabuse.csv')
     
     # Initalizes data sets.
     total = []
