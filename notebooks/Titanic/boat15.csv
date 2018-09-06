@@ -1,0 +1,38 @@
+,Name,Sex,Class,Ticket Fare,Embarked,Home Destination
+0,"Homer, Mr. Harry (""Mr E Haven"")",male,1,26.5500,C,"Indianapolis, IN"
+1,"Harris, Mr. George",male,2,10.5000,S,London
+2,"Abrahamsson, Mr. Abraham August Johannes",male,3,7.9250,S,"Taalintehdas, Finland Hoboken, NJ"
+3,"Albimona, Mr. Nassef Cassem",male,3,18.7875,C,"Syria Fredericksburg, VA"
+4,"Asplund, Master. Edvin Rojj Felix",male,3,31.3875,S,"Sweden Worcester, MA"
+5,"Asplund, Miss. Lillian Gertrud",female,3,31.3875,S,"Sweden Worcester, MA"
+6,"Asplund, Mrs. Carl Oscar (Selma Augusta Emilia Johansson)",female,3,31.3875,S,"Sweden  Worcester, MA"
+7,"Barah, Mr. Hanna Assi",male,3,7.2292,C,
+8,"Dahl, Mr. Karl Edwart",male,3,8.0500,S,"Australia Fingal, ND"
+9,"Daly, Miss. Margaret Marcella ""Maggie""",female,3,6.9500,Q,"Co Athlone, Ireland New York, NY"
+10,"de Messemaeker, Mr. Guillaume Joseph",male,3,17.4000,S,"Tampico, MT"
+11,"Finoli, Mr. Luigi",male,3,7.0500,S,"Italy Philadelphia, PA"
+12,"Hakkarainen, Mrs. Pekka Pietari (Elin Matilda Dolck)",female,3,15.8500,S,
+13,"Hedman, Mr. Oskar Arvid",male,3,6.9750,S,
+14,"Hirvonen, Miss. Hildur E",female,3,12.2875,S,
+15,"Hirvonen, Mrs. Alexander (Helga E Lindqvist)",female,3,12.2875,S,
+16,"Jalsevac, Mr. Ivan",male,3,7.8958,C,
+17,"Johansson Palmquist, Mr. Oskar Leander",male,3,7.7750,S,
+18,"Johnson, Master. Harold Theodor",male,3,11.1333,S,
+19,"Johnson, Miss. Eleanor Ileen",female,3,11.1333,S,
+20,"Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)",female,3,11.1333,S,
+21,"Jonsson, Mr. Carl",male,3,7.8542,S,
+22,"Jussila, Mr. Eiriik",male,3,7.9250,S,
+23,"Karun, Miss. Manca",female,3,13.4167,C,
+24,"Karun, Mr. Franz",male,3,13.4167,C,
+25,"Lindqvist, Mr. Eino William",male,3,7.9250,S,
+26,"Lulic, Mr. Nikola",male,3,8.6625,S,
+27,"Lundstrom, Mr. Thure Edvin",male,3,7.5792,S,
+28,"Madigan, Miss. Margaret ""Maggie""",female,3,7.7500,Q,
+29,"Mamee, Mr. Hanna",male,3,7.2292,C,
+30,"Midtsjo, Mr. Karl Albert",male,3,7.7750,S,
+31,"Mulvihill, Miss. Bertha E",female,3,7.7500,Q,
+32,"Persson, Mr. Ernst Ulrik",male,3,7.7750,S,
+33,"Sundman, Mr. Johan Julian",male,3,7.9250,S,
+34,"Tornquist, Mr. William Henry",male,3,0.0000,S,
+35,"Turja, Miss. Anna Sofia",female,3,9.8417,S,
+36,"Turkula, Mrs. (Hedwig)",female,3,9.5875,S,

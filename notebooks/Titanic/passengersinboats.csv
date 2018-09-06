@@ -1,0 +1,672 @@
+Boat,Class,Name
+1,CR,Mr. Albert Edward James Horswell or Horswill
+1,CR,Mr. Charles Hendrickson or Hendricksen
+1,CR,Mr. George Thomas Macdonald Symons
+1,CR,Mr. James Taylor
+1,CR,Mr. Samuel Collins
+1,CR,Mr. Shee
+1,CR,Robert William Pusey
+1,FC,Lady Lucille Wallace Sutherland Duff Gordon
+1,FC,Miss Francatelli
+1,FC,Mr. Abraham L. Salomon
+1,FC,Mr. Charles Emil Henry Stengel
+1,FC,Sir Cosmo Edmund Duff Gordon
+2,CR,Cmdr. Joseph Groves Boxhall
+2,CR,Mr. Frank Osman
+2,CR,Mr. James Johnson (or Johnston)
+2,FC,Miss (?) Amelia Kenchen
+2,FC,Miss Elizabeth Walton Allen
+2,FC,Miss Georgette Alexandra Madill
+2,FC,Miss LeRoy
+2,FC,Mrs. Edward Dale (Charlotte Lamson) Appleton
+2,FC,Mrs. Edward Scott (Elizabeth Walton McMillan) Robert
+2,FC,Mrs. Robert Clifford (Molvina Helen Lamson) Cornell
+2,FC,Mrs. Walter Donald (Mahala Dutton) Douglas
+2,OT,a cook
+2,TC,Master Georges Youssef
+2,TC,Master Neville Coutts
+2,TC,Master William Leslie Coutts
+2,TC,Miss Louise Gretchen Kink
+2,TC,Miss Marian Youssef9
+2,TC,Mr. Anton Kink
+2,TC,Mr. Brahim Youssef9
+2,TC,Mrs. Anton (Louise Heilmann) Kink
+2,TC,Mrs. Brahim (Hanne) Youssef9
+2,TC,Mrs. William (Minnie) Coutts
+3,CR,Mr. C.D. McKay
+3,CR,Mr. C.H. Pascoe
+3,CR,Mr. George Moore
+3,FC,Col. Alfons Simonius-Blumer
+3,FC,Dr. Max Staehlin
+3,FC,Master Robert Douglas Speddon
+3,FC,Miss (?) Anna Hard
+3,FC,Miss (?) Helen Wilson
+3,FC,Miss Burns
+3,FC,Miss Elizabeth W. Shutes
+3,FC,Miss Margaret Edith Graham
+3,FC,Miss Pericault
+3,FC,Mr. Adolphe Saalfeld
+3,FC,Mr. Albert Adrian Dick
+3,FC,Mr. Frederic Oakley Speddon
+3,FC,Mr. Harry Anderson
+3,FC,Mr. Henry Sleeper Harper
+3,FC,Mr. Lesneur
+3,FC,Mr. Thomas Drake Martinez Cardeza
+3,FC,Mr. Walter James Hawksford
+3,FC,Mrs. Albert Adrian (Vera Gillespie) Dick
+3,FC,Mrs. Charles Melville (Clara Jennings Gregg) Hays
+3,FC,Mrs. Henry Sleeper (Myra Haxtun) Harper
+3,FC,Mrs. James Warburton Martinez (Charlotte Wardle Drake) Cardeza
+3,FC,Mrs. Thornton (Orian Hays) Davidson
+3,FC,Mrs. William Thompson (Edith Junkins) Graham
+3,FC,Mrs. Frederic Oakley (Margaretta Corning Stone) Speddon
+3,FC,Hamad Hassah
+4,CR,Mr. Andrew Cunningham
+4,CR,Mr. F. Smith
+4,CR,Mr. Frank W. Prentice
+4,CR,Mr. Frederick Scott
+4,CR,Mr. Jack Foley
+4,CR,Mr. James Crimmins
+4,CR,Mr. S.C. Seibert
+4,CR,Mr. Sam Parks
+4,CR,Mr. Samuel S. Hemming or Hemmings
+4,CR,Mr. Thomas Patrick Granger
+4,CR,Mr. Thomas Patrick. Dillon
+4,CR,Mr. W.H. Lyons
+4,CR,Mr. Walter John Perkis
+4,CR,Mr. W. McCarthy
+4,FC,Master John Borie Ryerson
+4,FC,Master William Thornton Carter II
+4,FC,Miss (?) Chandowson
+4,FC,Miss (?) Margaret Fleming
+4,FC,Miss Bidois
+4,FC,Miss Caroline Louise Endres
+4,FC,Miss Elizabeth Mussey Eustis
+4,FC,Miss Emily Borie Ryerson
+4,FC,Miss Grace Scott Bowen
+4,FC,Miss Jean Gertrude Hippach
+4,FC,Miss Lucile Polk Carter
+4,FC,Miss Serepeca
+4,FC,Miss Suzette Parker Ryerson
+4,FC,Mrs. Arthur Larned (Emily Maria Borie) Ryerson
+4,FC,Mrs. George Dunton (Eleanor Elkins) Widener
+4,FC,Mrs. John Borland (Marian Longstreth Morris) Thayer
+4,FC,Mrs. John Bradley (Florence Briggs Thayer) Cumings or Cummings
+4,FC,Mrs. John Jacob (Madeleine Talmadge Force) Astor
+4,FC,Mrs. Walter Bertram (Martha Eustis) Stephenson
+4,FC,Mrs. Walter Miller (Virginia McDowell) Clark
+4,FC,Mrs. William Ernest (Lucile Polk) Carter
+4,FC,Victorine Perkins
+4,FC,Mrs. Louis Albert (Ida Sophia Fischer) Hippach
+4,OT,a baby in Miss Eustis care
+4,OT,a stowaway
+4,OT,a young woman and her baby 9
+4,OT,Widener maid
+4,TC,Master Carl Edvin Rojj Felix Asplund
+4,TC,Master Elias Nicola-Yarred
+4,TC,Miss Jamila Nicola-Yarred
+4,TC,Miss Lillian Gertrude Asplund
+4,TC,Mr. Daniel Buckley
+4,TC,Mrs. Carl Oscar (Selma Augusta Johansson) Asplund
+5,CR,Cmdr. Herbert John Pitman
+5,CR,Mr. Alfred Olliver
+5,CR,Mr. Alfred Shiers
+5,CR,Mr. C. Edwards 36 steward (mentioned by Shapiro
+5,CR,Mr. E.J. Guy
+5,CR,Mr. Henry Samuel Etches
+5,CR,Mr. Paul Mauge
+5,FC,Dr. Henry William Frauenthal
+5,FC,Master Washington Dodge
+5,FC,Miss Harriet R. Crosby
+5,FC,Miss Helen Raghnild Ostby
+5,FC,Miss Marguerite Frolicher
+5,FC,Mr. Edward P. Calderhead
+5,FC,Mr. Edwin Nelson Kimball Jr.
+5,FC,Mr. Elmer Zebley Taylor
+5,FC,Mr. George Achilles Harder
+5,FC,Mr. Isaac Gerald Frauenthal
+5,FC,Mr. John Irving Flynn
+5,FC,Mr. Karl Howell Behr
+5,FC,Mr. Norman Campbell Chambers
+5,FC,Mr. Richard Leonard Beckwith
+5,FC,Mr. Samuel L. Goldenberg
+5,FC,Mr. Spencer Victor Silverthorne
+5,FC,Mrs. Charles Emil Henry (Annie May Morris) Stengel
+5,FC,Mrs. Edward Gifford (Catherine Elizabeth Halstead) Crosby
+5,FC,Mrs. Edwin Nelson (Gertrude Parsons) Kimball Jr.
+5,FC,Mrs. Elmer Zebley (Juliet Cummins Wright) Taylor
+5,FC,Mrs. Frank Manley (Anna S. Atkinson) Warren
+5,FC,Mrs. George Achilles (Dorothy Annan) Harder
+5,FC,Mrs. Henry Arthur (Genevieve Fosdick) Cassebeer Jr.
+5,FC,Mrs. Henry William (Clara Heinsheimer) Frauenthal
+5,FC,Mrs. Maximillian (Margaretha Emerentia Stehli) Frolicher-Stehli
+5,FC,Mrs. Norman Campbell (Bertha Griggs) Chambers
+5,FC,Mrs. Richard Leonard (Sallie Monypeny) Beckwith
+5,FC,Mrs. Samuel L. (Edwiga Grabowsko) Goldenberg
+5,FC,Miss Helen Monypeny Newsom
+5,FC,Mr. Maximillian Frolicher-Stehli
+5,FC,Mrs. Washington (Ruth Vidaver) Dodge
+5,OT,a baby
+5,OT,a stewardess
+5,OT,one of two stowaways identified as East Asian by Mr. Stengel 
+6,CR,another of two stowaways identified as East Asian by Mr. Stengel 
+6,CR,Mr. Frederick Fleet
+6,CR,Mr. Robert Hitchens9 or Hichens
+6,FC,Maj. Arthur Godfrey Peuchen
+6,FC,Mdme. Berthe de Villiers
+6,FC,Miss Barber
+6,FC,Miss Elsie Edith Bowerman
+6,FC,Miss Icard
+6,FC,Miss Madeleine Newell
+6,FC,Miss Marjorie Newell
+6,FC,Miss Norton
+6,FC,Mrs. Carl Johan (Sigrid Posse) Lindstrom
+6,FC,Mrs. Edith Martha Chibnall
+6,FC,Mrs. Edward (Helen Churchill Hungerford) Candee
+6,FC,Mrs. Frederick Charles (Suzette Baxter) Douglas
+6,FC,Mrs. George Nelson (Martha E. ) Stone
+6,FC,Mrs. James (Helene De Laudeniere Chaput) Baxter
+6,FC,Mrs. James Joseph (Margaret Molly Tobin) Brown
+6,FC,Mrs. Lucien Philip (Mary Eloise Hughes) Smith
+6,FC,Mrs. Martin (Elizabeth L. Barrett) Rothschild
+6,FC,Mrs. William Augustus (Marie Eugenie) Spencer
+6,FC,Mrs. Edgar Joseph (Leila Saks) Meyer
+6,OT,a boy with an injured arm ordered in by Capt. Smith  (possibly same as Peuchens stowaway)
+6,OT,a fireman transferred later from Boat 16 to row 
+6,OT,a stowaway
+7,CR,Mr. Archie Jewell
+7,CR,Mr. George A. Hogg
+7,CR,Mr. W. Weller
+7,FC,Miss Dorothy Gibson
+7,FC,Mr. A. Fernand Omont
+7,FC,Mr. Alfred Nourney (Baron von Drachstedt)
+7,FC,Mr. Dickinson H. Bishop
+7,FC,Mr. Frederic Kimber Seward
+7,FC,Mr. Gilbert Milligan Tucker Jr.
+7,FC,Mr. Henry Blank
+7,FC,Mr. James R. McGough
+7,FC,Mr. John Pillsbury Snyder
+7,FC,Mr. Paul Chevre
+7,FC,Mr. Pierre Marechal
+7,FC,Mr. Robert Williams Daniel
+7,FC,Mr. William Bertram Greenfield
+7,FC,Mr. William Thompson Sloper
+7,FC,Mrs. Alfred (Antoinette) Flegenheim
+7,FC,Mrs. Boulton (Olive Potter) Earnshaw
+7,FC,Mrs. Dickinson H. (Helen Walton) Bishop
+7,FC,Mrs. John Pillsbury (Nelle Stevenson) Snyder
+7,FC,Mrs. Leo David (Blanche Strouse) Greenfield
+7,FC,Mrs. Leonard (Pauline C. Boeson) Gibson
+7,FC,Mrs. Thomas (Lily Alexenia Wilson) Potter Jr. 
+7,FC,Miss Margaret Bechstein Hays
+8,CR,one out of four crew in all
+8,CR,a second out of four crew in all
+8,CR,Mr. Alfred Crawford
+8,CR,Mr. Thomas Jones
+8,FC,Amelia Bessetti
+8,FC,Dr. Alice Farnham Leader
+8,FC,Miss (?) Albina Bazzani
+8,FC,Miss (?) Sarah Daniels
+8,FC,Miss Caroline Bonnell
+8,FC,Miss Constance Willard
+8,FC,Miss Elizabeth Bonnell
+8,FC,Miss Ellen Bird
+8,FC,Miss Gladys Cherry
+8,FC,Miss Maloney
+8,FC,Miss Marie Grice Young
+8,FC,Miss Mary Natalie Wick
+8,FC,Miss Ruth Taussig
+8,FC,Mlle. Olivia
+8,FC,Mrs. Emil (Tillie Mandelbaum) Taussig
+8,FC,Mrs. Frederick Joel (Margaret Welles Barron) Swift
+8,FC,Mrs. Frederick R. (Marion) Kenyon
+8,FC,Mrs. George Dennick (Mary Hitchcock) Wick
+8,FC,Mrs. J. Stuart (Ella Holmes) White
+8,FC,Mrs. Thomas (Edith Warne) Pears
+8,FC,Mrs. William Robert (Emma Eliza Ward) Bucknell
+8,FC,the Countess of Rothes (Noel Lucy Martha Dyer-Edwards)
+8,FC,Mrs. Victor de Satode (Josefa de Soto) Penasco
+8,OT,a cook
+8,OT,another seaman
+8,OT,Gracie lists steward Hart on this boat according to Mr. Jones testimony
+9,CR,Mr. Albert Haines
+9,CR,Mr. George Scooch Kemish
+9,CR,Mr. James G. Widgery
+9,CR,Mr. James R. Paddy McGough
+9,CR,Mr. W. C. Peters
+9,CR,Mr. Walter Wynne 9
+9,CR,Mr. William Ward
+9,FC,Miss Mary Conover Lines
+9,FC,Mlle. Segesser
+9,FC,Mrs. Ernest H. (Elizabeth Lindsey James) Lines
+9,FC,Mrs. Jacques (May Peel) Futrelle
+9,FC,Mrs. Leontine Pauline Aubert
+9,SC,Miss Alice Herman
+9,SC,Miss Bertha Watt
+9,SC,Miss Ellen Toomey
+9,SC,Miss Kate Buss
+9,SC,Miss Kate Herman
+9,SC,Miss Marion Wright
+9,SC,Mr. Charles Wilhelms
+9,SC,Mr. Sydney C. Stuart Collett
+9,SC,Mrs. James (Bessie Inglis Milne) Watt
+9,SC,Mrs. Samuel (Jane Laver) Herman
+9,SC,Mrs. William H. (Jessie L.) Trout
+10,CR,Mr. C. Rice
+10,CR,Mr. Edward John Buley
+10,CR,Mr. Frank Oliver Evans
+10,CR,Mr. William Burke
+10,FC,Miss Alice Elizabeth Fortune
+10,FC,Miss Ethel Flora Fortune
+10,FC,Miss Gretchen Fiske Longley
+10,FC,Miss Kornelia Theodosia Andrews
+10,FC,Miss Mabel Fortune
+10,FC,Mrs. John C. (Anna Andrews) Hogeboom
+10,FC,Mrs. Mark (Mary McDougald) Fortune
+10,OT,a male passenger who jumped from deck 9 (possibly Mr. Hosono
+10,OT,a steward
+10,OT,a stowaway
+10,SC,Miss Nora A. Keane
+10,SC,Mr. Masafumi Hosono
+11,CR,Mr. A. McMicken or McMichen
+11,CR,Mr. A. Thissinger or Thessenger or Thussinger
+11,CR,Mr. Charles Donald Mackay
+11,CR,Mr. Edward Wheelton
+11,CR,Mr. Joseph Thomas Wheate or Wheat
+11,CR,Mr. S. Humphreys or Humphries
+11,CR,Mr. W. Brice
+11,CR,Mrs. Annie Robinson
+11,CR,Mrs. Maude Slocombe
+11,FC,Master Hudson Trevor Allison
+11,FC,Miss (?) Alice Cleaver
+11,FC,Miss Edith Louise Rosenbaum or Russell
+11,FC,Mr. Philip E. Mock
+11,FC,Mrs. Paul (Emma Mock) Schabert
+11,OT,a fireman 9
+11,SC,Master Richard F. Becker
+11,SC,Miss Jessie Leitch
+11,SC,Miss Marion Louise Becker
+11,SC,Miss Maude Sincock
+11,SC,Miss Mildred Brown
+11,SC,Miss Nina Harper
+11,SC,Miss Phyllis May Quick
+11,SC,Miss Winifred Vera Quick
+11,SC,Mrs. Allen Oliver (Nellie E. Baumgardner) Becker
+11,SC,Mrs. Elizabeth Ramell Nye
+11,SC,Mrs. Frederick C. (Jane Richards) Quick
+11,TC,Master Philip Aks
+12,CR,Mr. Frederick Clench or Clinch
+12,CR,Mr. John Poingdestre
+12,OT,a male passenger who jumped from deck
+12,OT,Seaman Lucas and two firemen transferred from Boat D 9
+12,SC,Miss Alice Phillips
+12,SC,Miss Asuncion Duran y More
+12,SC,Miss Dagmar Bryhl
+12,SC,Miss Emily Rugg
+12,SC,Miss Florentina Duran y More
+12,SC,Miss Lillian W. Bentham
+12,SC,Mrs. John James (Florence Louise Long) Ware
+12,SC,Mrs. Lutie Davis Parrish
+12,SC,Mrs. Samuel (Anna) Abelson
+12,SC,Mrs. William (Imanita) Shelly
+12,TC,Master Bertram Vere Dean
+12,TC,Miss Elizabeth Gladys Millvina Dean
+12,TC,Mrs. Bertram (Eva Ettie) Dean
+12,TC,Mrs. Percival (Florence Kate White) Thorneycroft
+13,CR,Mr. Frederick Barrett
+13,CR,Mr. Frederick Dent Ray
+13,CR,Mr. George William Beauchamp
+13,CR,Mr. Reginald Robinson Lee
+13,CR,Mr. W. Wright
+13,CR,Mr. Walter Williams
+13,CR,Mr. William Wally Major
+13,FC,Dr. Washington Dodge
+13,OT,a baker 9
+13,OT,two firemen 9
+13,SC,Master Alden Gates Caldwell
+13,SC,Master George Sidney Richards
+13,SC,Master William Rowe Richards
+13,SC,Miss Ellen Nellie Hocking
+13,SC,Miss Hilda Mary Slayter
+13,SC,Miss Mary Davis
+13,SC,Miss Ruth Elizabeth Becker
+13,SC,Mr. Albert Francis Caldwell
+13,SC,Mr. Lawrence Beesley
+13,SC,Mrs. Albert Francis (Sylvia Mae Harbaugh) Caldwell
+13,SC,Mrs. Elizabeth Hocking
+13,SC,Mrs. Mary D. Hewlett
+13,SC,Mrs. Sidney (Emily Hocking) Richards
+13,TC,Master Arthur Olsen
+13,TC,Miss Aurora Adelia Landergren
+13,TC,Miss Beatrice Irene Sandstrom
+13,TC,Miss Bridget Delia Bradley
+13,TC,Miss Elizabeth Dowdell
+13,TC,Miss Helmina Josefina Nilsson
+13,TC,Miss Hilda Maria Hellstrom
+13,TC,Miss Julia Smyth
+13,TC,Miss Marguerite Rut Sandstrom
+13,TC,Miss Mary Agatha Glynn
+13,TC,Miss Virginia Ethel Emanuel
+13,TC,Mr. Bernt Johannesen-Bratthammer
+13,TC,Mr. Frithiof Madsen
+13,TC,Mr. Johan Cervin Svensson
+13,TC,Mr. Oskar L. Johanson
+13,TC,Mrs. Hjalmar (Agnes Charlotta Bengtsson) Sandstrom
+13,TC,Mrs. Sam (Leah Rosen) Aks
+13,TC,Mrs. William Joseph (Anna) De Messemacker
+13,TC,Mr. Einar Gervasius Karlsson
+14,CR,Cmdr. Harold Godfrey Lowe
+14,CR,Mr. Frank Herbert Morris
+14,CR,Mr. George Frederick Crowe
+14,CR,Mr. John Jack Stewart
+14,CR,Mr. Joseph Scarrott
+14,FC,Miss Daisy E. Minahan
+14,FC,Miss Sara Rebecca Compton
+14,FC,Mr. William F. Hoyt
+14,FC,Mrs. Alexander Taylor (Mary Eliza Ingersoll) Compton
+14,FC,Mrs. William Edward (Lillian E. Thorpe) Minahan
+14,OT,a stowaway disguised as woman
+14,OT,an East Asian male passenger pulled from water 9
+14,SC,Miss Edith E. Brown
+14,SC,Miss Eva Miriam Hart
+14,SC,Miss Madeleine Violet Mellenger
+14,SC,Miss Marjory or Marjorie Collyer
+14,SC,Miss Selena Rogers Cook
+14,SC,Mr. Charles Eugene Williams
+14,SC,Mrs. Amelia Lamore
+14,SC,Mrs. Charles Alexander (Alice Adelaide) Louch
+14,SC,Mrs. Charles V. (Ada Maria) Clarke
+14,SC,Mrs. Elizabeth Anne Mellenger
+14,SC,Mrs. Harvey (Charlotte Tate) Collyer
+14,SC,Mrs. Thomas William Soloman (Elizabeth C.) Brown
+14,SC,Mrs. Benjamin (Esther) Hart
+14,TC,Master Assed Alexander Thomas
+14,TC,Mr. Edward Ryan
+14,TC,Mrs. Alexander (Thelma) Thomas
+15,CR,Mr. George Cavell
+15,CR,Mr. John Edward Hart
+15,CR,Mr. L. Diamond
+15,CR,Mr. Samuel James Rule
+15,CR,Mr. W. H. Taylor
+15,CR,two Swedish girls 32
+15,FC,Mr. Charles Hallis Romaine
+15,FC,Mr. George Arthur Brayton
+15,FC,Mr. Harry Haven or Homer
+15,SC,Mr. August Abrahamsson
+15,TC,Master Harold Theodor Johnson
+15,TC,Miss Eleanor Ileen Johnson
+15,TC,Mr. Charles Edward Dahl
+15,TC,Mr. Eino William Lindqvist
+15,TC,Mr. Karl Albert Midtsjo
+15,TC,Mr. William Joseph De Messemacker
+15,TC,Mrs. Oscar W. (Alice Berg) Johnson
+15,TC,Mrs. Pekka Pietari (Elin Dolk) Hakkarainen
+16,CR,Miss Violet Constance Jessop
+16,CR,Mr. C. E. Andrews
+16,CR,Mr. Ernest Archer
+16,CR,Mr. H. Bailey
+16,CR,Mrs. Elizabeth Leather
+16,OT,a baby left in Miss Jessops charge 25
+16,OT,a baby left in the care of Miss Troutt
+16,OT,a fireman
+16,OT,a stewardess 9
+16,OT,a woman who lost her husband and two sons 25
+16,SC,Miss Edwina Celia Troutt
+16,TC,Miss Anna Karen Abelseth
+A,CR,Mr. Edward Brown
+A,CR,Mr. John or James Thompson
+A,FC,Mr. George Lucien Rheims
+A,FC,Mr. Peter Denis Daly
+A,FC,Mr. Richard Norris Williams II
+A,FC,Mr. Thomson Beattie
+A,OT,a boy with a name that sounded like volunteer
+A,OT,two or three crew who died during the night32
+A,OT,two unidentified bodies
+A,TC,Mr. August Edvard Wennerstrom
+A,TC,Mr. Carl Jonsson
+A,TC,Mr. Carl Olof Jansson
+A,TC,Mr. Edvard Bengtsson Lindell
+A,TC,Mr. Gunnar Isidor Tenglin
+A,TC,Mr. Olaus Abelseth
+A,TC,Mr. William Henry Tornquist
+A,TC,Mrs. Stanton (Rosa) Abbott
+B,CR,Cmdr. Charles Herbert Lightoller
+B,CR,Mr. Charles Joughin
+B,CR,Mr. Ernest Allan22 or Allen
+B,CR,Mr. Harold Sydney Bride
+B,CR,Mr. Harry Senior
+B,CR,Mr. J. Hagen
+B,CR,Mr. James McGann
+B,CR,Mr. John Collins
+B,CR,Mr. John George Jack Phillips
+B,CR,Mr. John Maynard
+B,CR,Mr. Sydney Daniels
+B,CR,Mr. Thayer estimated about 20 firemen were aboard
+B,CR,Mr. Thomas Whiteley
+B,CR,Mr. Walter Wally Hurst
+B,FC,Col. Archibald Gracie IV
+B,FC,John Borland Jack Thayer Jr.
+B,FC,Mr. Algernon H. Barkworth
+B,SC,Mr. William John Mellor
+B,TC,Mr. Albert Johan Moss
+B,TC,Mr. Edward Arthur Dorkings
+B,TC,Mr. Eugene Daly
+B,TC,Mr. Oscar Johansson Olsson
+B,TC,Mr. Patrick OKeefe
+B,TC,Mr. Thomas J. McCormack
+B,TC,Mr. Victor Francis Sunderland
+C,CR,Mr. Albert or Alfred Victor Pearcey
+C,CR,Mr. August A.H. Weikman
+C,CR,Mr. George Thomas Rowe
+C,FC,Mr. Joseph Bruce Ismay
+C,FC,Mr. William Ernest Carter
+C,OT,four stowaways
+C,OT,three firemen 9
+C,TC,Master Frank John William Goldsmith
+C,TC,Master George Touma or Thomas
+C,TC,Miss Emily Elsie Stanley
+C,TC,Miss Hanna Touma or Thomas
+C,TC,Miss Margaret Devaney
+C,TC,Miss May Howard
+C,TC,Mr. Ling Hee
+C,TC,Mrs. Darwin (Anna Razi) Touma or Thomas
+C,TC,Mrs. Frank John (Emily A. Brown) Goldsmith
+C,TC,Mrs. Mariana Assaf
+D,CR,Mary or May Sloan 22 or Sloane
+D,CR,Miss A. Caton
+D,CR,Miss Evelyn Marsden
+D,CR,Miss T. E. Smith
+D,CR,Mr. Alfred Pugh
+D,CR,Mr. Arthur E. Lewis
+D,CR,Mr. Arthur John Bright
+D,CR,Mr. Arthur Windebank
+D,CR,Mr. Frederick Sheath
+D,CR,Mr. H.J. Prior
+D,CR,Mr. Harold Phillimore
+D,CR,Mr. James Witter 22 or Whitter
+D,CR,Mr. John Connor
+D,CR,Mr. John Hardy
+D,CR,Mr. John Podesta
+D,CR,Mr. Joseph Chapman
+D,CR,Mr. Melville E. Stone
+D,CR,Mr. Percival Albert Blake
+D,CR,Mr. Percy Keane
+D,CR,Mr. Reginald Charles Burgess
+D,CR,Mr. Walter Belford
+D,CR,Mr. William Lucas
+D,CR,Mr. William Nutbean
+D,CR,Mrs. Annie Martin
+D,CR,Mrs. H. McClaren
+D,CR,Mrs. Kate Gold22or Gould
+D,CR,Mrs. M. Bennett
+D,CR,Mrs. S.A. Stap
+D,FC,Lt. Mauritz Hakan Bjornstrom-Steffanson
+D,FC,Mr. Frederick Maxfield Hoyt
+D,FC,Mr. Hugh Woolner
+D,FC,Mrs. Alexander Oskar (Mary Alice Towner) Holverson
+D,FC,Mrs. Daniel Warner (Mary Graham Carmichael Farqhuarson) Marvin
+D,FC,Mrs. Frederick Maxfield (Jane Ann Forby) Hoyt
+D,FC,Mrs. Gertrude Maybelle Thorne
+D,FC,Mrs. Henry Birkhardt (Irene Wallach) Harris
+D,FC,Mrs. Herbert Fuller (Carrie Toogood) Chaffee
+D,FC,Mrs. John Murray (Caroline Lane Lamson) Brown
+D,FC,Mrs. William Baird (Alice Munger) Silvey
+D,OT,a group of Syrian women
+D,SC,Master Edmond Roger Navatril
+D,SC,Master John Morgan Davis
+D,SC,Master Marshall Brines Drew
+D,SC,Master Michel M. Navatril
+D,SC,Master Ralph Lester Wells
+D,SC,Master Viljo Hamalainen
+D,SC,Miss Anna Siukonnen
+D,SC,Miss Barbara J. West
+D,SC,Miss Bertha Ilett
+D,SC,Miss Bertha Lehmann
+D,SC,Miss Clear Cameron
+D,SC,Miss Constance Miriam West
+D,SC,Miss Elsie Doling
+D,SC,Miss Ethel Garside
+D,SC,Miss Joan Wells
+D,SC,Miss Julie Christy
+D,SC,Miss Louise LaRouche
+D,SC,Miss Lucy Ridsdale
+D,SC,Miss Marion Smith
+D,SC,Miss Nellie Walcroft
+D,SC,Miss Rosa Pinsky
+D,SC,Miss Simonne LaRouche
+D,SC,Miss Susan Webber
+D,SC,Mr. Edward Beane
+D,SC,Mr. Emilio Pallas y Castello
+D,SC,Mr. Emilio Portaluppi
+D,SC,Mr. George Harris
+D,SC,Mr. Julian Padro y Manent
+D,SC,Mr. Percy Thomas Oxenham
+D,SC,Mrs. Ada Doling
+D,SC,Mrs. Ada E. Hall Balls
+D,SC,Mrs. Agnes Davis
+D,SC,Mrs. Albert (Antoinette) Mallet
+D,SC,Mrs. Alice Frances Christy
+D,SC,Mrs. Amin S. (Marie Thuillard) Jerwan
+D,SC,Mrs. Arthur H. (Addie Trevaskis) Wells
+D,SC,Mrs. Carolina Bystrom
+D,SC,Mrs. Edward (Ethel Clarke) Beane
+D,SC,Mrs. Edwy Arthur (Ada Mary) West
+D,SC,Mrs. Elizabeth Anne Wilkinson (Mrs. Lizzie Faunthorpe)
+D,SC,Mrs. Encarnacion Reynaldo
+D,SC,Mrs. Florence Fannie Kelly
+D,SC,Mrs. Kate Louise Phillips Marshall
+D,SC,Mrs. Leopold (Mathilda) Weisz
+D,SC,Mrs. Nicholas (Adele) Nasser or Nasrallah
+D,SC,Mrs. Peter Henry (Lillian Jeffreys) Renouf
+D,SC,Mrs. Sebastian (Argenia Genovese) Del Carlo
+D,SC,Mrs. Sidney Samuel (Amy Frances Christy) Jacobsohn
+D,SC,Mrs. Sinai (Miriam Sternim) Kantor
+D,SC,Mrs. Stephen (Annie Margaret) Hold
+D,SC,Mrs. William (Anna) Hamalainen
+D,SC,Mrs. William A. (Florence) Angle
+D,SC,Miss Lyyli Silven
+D,SC,Mrs. James Vivian (Lulu Thorne Christian) Drew
+D,SC,Mrs. Joseph (Juliette) LaRouche
+D,TC,Master George Moubarek
+D,TC,Master Meyer Moor
+D,TC,Master Michael J. Peter or Joseph
+D,TC,Master William George Moubarek
+D,TC,Miss Adele Kiamie Najib
+D,TC,Miss Agnes McCoy
+D,TC,Miss Alice McCoy
+D,TC,Miss Anna Karun
+D,TC,Miss Anna Nysten
+D,TC,Miss Anna Salkjelsvik
+D,TC,Miss Anna Sofia Sjoblom
+D,TC,Miss Anna Sofia Turja
+D,TC,Miss Annie Jermyn
+D,TC,Miss Annie Kate Kelly
+D,TC,Miss Annie McGowan
+D,TC,Miss Ayout Banoura
+D,TC,Miss Berta Olivia Nilsson
+D,TC,Miss Bertha E. Mulvihill
+D,TC,Miss Bertha Moran
+D,TC,Miss Bridget Driscoll
+D,TC,Miss Delia McDermott
+D,TC,Miss Ellen Shine
+D,TC,Miss Eluna Honkanen
+D,TC,Miss Emily Louisa Badman
+D,TC,Miss Eugenie Baclini
+D,TC,Miss Helen Carr
+D,TC,Miss Helen Mary Mocklare
+D,TC,Miss Helene Baclini
+D,TC,Miss Hilder E. Hirvonen
+D,TC,Miss Jennie Drapkin
+D,TC,Miss Kate Connolly
+D,TC,Miss Katherine Murphy
+D,TC,Miss Katie Gilnagh
+D,TC,Miss Katie McCarthy
+D,TC,Miss Katie Mullins
+D,TC,Miss Laina Heikkinen
+D,TC,Miss Laura Alice Cribb
+D,TC,Miss Marcella Daly
+D,TC,Miss Margaret Mannion
+D,TC,Miss Margaret Murphy
+D,TC,Miss Maria Baclini
+D,TC,Miss Maria Nackid
+D,TC,Miss Maria Osman
+D,TC,Miss Mary Kelly
+D,TC,Miss Mary Peter or Joseph
+D,TC,Miss Nellie ODwyer
+D,TC,Miss Nora Healy
+D,TC,Miss Nora Murphy
+D,TC,Miss Nora OLeary
+D,TC,Miss Olga Elida Lundin
+D,TC,Miss Sarah Roth
+D,TC,Miss Velin Ohman
+D,TC,Mr. Abraham Hyman
+D,TC,Mr. Ali Lam
+D,TC,Mr. Berk Pickard
+D,TC,Mr. Bernard McCoy
+D,TC,Mr. David Vartunian
+D,TC,Mr. Erik Jussila
+D,TC,Mr. Ernest Ulrik Persson
+D,TC,Mr. Fang Lang
+D,TC,Mr. Farnham Leeni
+D,TC,Mr. Franz Karun
+D,TC,Mr. Gurshon Gus Cohen
+D,TC,Mr. Hanna John Moubarek or Borak
+D,TC,Mr. Hanna Mamee
+D,TC,Mr. Ivan Yalsevac
+D,TC,Mr. Jean Sheerlinck
+D,TC,Mr. Johan Julian Sundman
+D,TC,Mr. John Kennedy
+D,TC,Mr. Joseph Duquemin
+D,TC,Mr. Juhho Stranden
+D,TC,Mr. Jules Sop
+D,TC,Mr. Lee Bing
+D,TC,Mr. Luigi Finoli
+D,TC,Mr. Nassef Belmenly Cassem
+D,TC,Mr. Neshan Krekorian
+D,TC,Mr. Nicola Lulich
+D,TC,Mr. Oscar Headman
+D,TC,Mr. Theo De Mulder
+D,TC,Mr. Thure Edvin Lundstrom
+D,TC,Mrs. Adolf Fredrik (Anna Elizabeth Judith Anderson) Dyker
+D,TC,Mrs. Alexander (Helga E. ) Hirvonen
+D,TC,Mrs. Antoni (Celiney Alexander) Yasbeck
+D,TC,Mrs. Catherine Peter or Joseph
+D,TC,Mrs. Ellen Wilkes
+D,TC,Mrs. Fatima Masselmany
+D,TC,Mrs. George (Amenia) Moubarek
+D,TC,Mrs. Hedvig Turkula
+D,TC,Mrs. Hugh (Mary) McGovern
+D,TC,Mrs. Joseph (Sophie Easu) Abraham
+D,TC,Mrs. Karl Alfred (Maria Mathilda Gustafsson) Backstrom
+D,TC,Mrs. Mantoura Baloics Moussa
+D,TC,Mrs. Peter Claus (Jennie L. Howard) Hansen
+D,TC,Mrs. Said (Mary Mowad) Nackid
+D,TC,Mrs. Shahini Weappi Georges
+D,TC,Mrs. Solomon (Latifa) Baclini
+D,TC,Mrs. Thomas (Hannah Godfrey) OBrien
+D,TC,Miss Carla Christine Jensen
+D,TC,Miss Hannah Riordan
+D,TC,Miss Margaret Madigan
+D,TC,Mr. Said Nackid
+D,TC,Mrs. Bella Moor
+D,TC,Mrs. Thomas Henry (Mary Finck) Davison
