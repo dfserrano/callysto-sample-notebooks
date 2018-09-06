@@ -1,0 +1,27 @@
+,Name,Sex,Class,Ticket Fare,Embarked,Home Destination
+0,"Anderson, Mr. Harry",male,1,26.5500,S,"New York, NY"
+1,"Burns, Miss. Elizabeth Margaret",female,1,134.5000,C,
+2,"Cardeza, Mr. Thomas Drake Martinez",male,1,512.3292,C,"Austria-Hungary / Germantown, Philadelphia, PA"
+3,"Cardeza, Mrs. James Warburton Martinez (Charlotte Wardle Drake)",female,1,512.3292,C,"Germantown, Philadelphia, PA"
+4,"Daniel, Mr. Robert Williams",male,1,30.5000,S,"Philadelphia, PA"
+5,"Davidson, Mrs. Thornton (Orian Hays)",female,1,52.0000,S,"Montreal, PQ"
+6,"Dick, Mr. Albert Adrian",male,1,57.0000,S,"Calgary, AB"
+7,"Dick, Mrs. Albert Adrian (Vera Gillespie)",female,1,57.0000,S,"Calgary, AB"
+8,"Graham, Miss. Margaret Edith",female,1,30.0000,S,"Greenwich, CT"
+9,"Graham, Mrs. William Thompson (Edith Junkins)",female,1,153.4625,S,"Greenwich, CT"
+10,"Harper, Mr. Henry Sleeper",male,1,76.7292,C,"New York, NY"
+11,"Harper, Mrs. Henry Sleeper (Myna Haxtun)",female,1,76.7292,C,"New York, NY"
+12,"Hassab, Mr. Hammad",male,1,76.7292,C,
+13,"Hawksford, Mr. Walter James",male,1,30.0000,S,"Kingston, Surrey"
+14,"Hays, Mrs. Charles Melville (Clara Jennings Gregg)",female,1,93.5000,S,"Montreal, PQ"
+15,"Lesurer, Mr. Gustave J",male,1,512.3292,C,
+16,"Perreault, Miss. Anne",female,1,93.5000,S,
+17,"Saalfeld, Mr. Adolphe",male,1,30.5000,S,"Manchester, England"
+18,"Shutes, Miss. Elizabeth W",female,1,153.4625,S,"New York, NY / Greenwich CT"
+19,"Simonius-Blumer, Col. Oberst Alfons",male,1,35.5000,C,"Basel, Switzerland"
+20,"Spedden, Master. Robert Douglas",male,1,134.5000,C,"Tuxedo Park, NY"
+21,"Spedden, Mr. Frederic Oakley",male,1,134.5000,C,"Tuxedo Park, NY"
+22,"Spedden, Mrs. Frederic Oakley (Margaretta Corning Stone)",female,1,134.5000,C,"Tuxedo Park, NY"
+23,"Stahelin-Maeglin, Dr. Max",male,1,30.5000,C,"Basel, Switzerland"
+24,"Ward, Miss. Anna",female,1,512.3292,C,
+25,"Wilson, Miss. Helen Alice",female,1,134.5000,C,

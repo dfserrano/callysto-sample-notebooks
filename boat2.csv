@@ -1,0 +1,14 @@
+Name,Sex,Class,Ticket Fare,Embarked,Home Destination
+"Allen, Miss. Elisabeth Walton",female,1,211.3375,S,"St Louis, MO"
+"Cornell, Mrs. Robert Clifford (Malvina Helen Lamson)",female,1,25.7000,S,"New York, NY"
+"Douglas, Mrs. Walter Donald (Mahala Dutton)",female,1,106.4250,C,"Deephaven, MN / Cedar Rapids, IA"
+"Kreuchen, Miss. Emilie",female,1,211.3375,S,
+"LeRoy, Miss. Bertha",female,1,106.4250,C,
+"Madill, Miss. Georgette Alexandra",female,1,211.3375,S,"St Louis, MO"
+"Robert, Mrs. Edward Scott (Elisabeth Walton McMillan)",female,1,211.3375,S,"St Louis, MO"
+"Coutts, Master. Eden Leslie ""Neville""",male,3,15.9000,S,"England Brooklyn, NY"
+"Coutts, Master. William Loch ""William""",male,3,15.9000,S,"England Brooklyn, NY"
+"Coutts, Mrs. William (Winnie ""Minnie"" Treanor)",female,3,15.9000,S,"England Brooklyn, NY"
+"Kink-Heilmann, Miss. Luise Gretchen",female,3,22.0250,S,
+"Kink-Heilmann, Mr. Anton",male,3,22.0250,S,
+"Kink-Heilmann, Mrs. Anton (Luise Heilmann)",female,3,22.0250,S,
