@@ -1,0 +1,40 @@
+,Name,Sex,Class,Ticket Fare,Embarked,Home Destination
+0,"Dodge, Dr. Washington",male,1,81.8583,S,"San Francisco, CA"
+1,"Beane, Mr. Edward",male,2,26.0000,S,"Norwich / New York, NY"
+2,"Beane, Mrs. Edward (Ethel Clarke)",female,2,26.0000,S,"Norwich / New York, NY"
+3,"Becker, Miss. Ruth Elizabeth",female,2,39.0000,S,"Guntur, India / Benton Harbour, MI"
+4,"Beesley, Mr. Lawrence",male,2,13.0000,S,London
+5,"Caldwell, Master. Alden Gates",male,2,29.0000,S,"Bangkok, Thailand / Roseville, IL"
+6,"Caldwell, Mr. Albert Francis",male,2,29.0000,S,"Bangkok, Thailand / Roseville, IL"
+7,"Caldwell, Mrs. Albert Francis (Sylvia Mae Harbaugh)",female,2,29.0000,S,"Bangkok, Thailand / Roseville, IL"
+8,"Davis, Miss. Mary",female,2,13.0000,S,"London / Staten Island, NY"
+9,"Hewlett, Mrs. (Mary D Kingcome) ",female,2,16.0000,S,"India / Rapid City, SD"
+10,"Oxenham, Mr. Percy Thomas",male,2,10.5000,S,"Pondersend, England / New Durham, NJ"
+11,"Ridsdale, Miss. Lucy",female,2,10.5000,S,"London, England / Marietta, Ohio and Milwaukee, WI"
+12,"Slayter, Miss. Hilda Mary",female,2,12.3500,Q,"Halifax, NS"
+13,"Aks, Mrs. Sam (Leah Rosen)",female,3,9.3500,S,"London, England Norfolk, VA"
+14,"Asplund, Mr. Johan Charles",male,3,7.7958,S,"Oskarshamn, Sweden Minneapolis, MN"
+15,"Bradley, Miss. Bridget Delia",female,3,7.7250,Q,"Kingwilliamstown, Co Cork, Ireland Glens Falls, NY"
+16,"Buckley, Mr. Daniel",male,3,7.8208,Q,"Kingwilliamstown, Co Cork, Ireland New York, NY"
+17,"Connolly, Miss. Kate",female,3,7.7500,Q,Ireland
+18,"de Messemaeker, Mrs. Guillaume Joseph (Emma)",female,3,17.4000,S,"Tampico, MT"
+19,"Dowdell, Miss. Elizabeth",female,3,12.4750,S,"Union Hill, NJ"
+20,"Emanuel, Miss. Virginia Ethel",female,3,12.4750,S,"New York, NY"
+21,"Foo, Mr. Choong",male,3,56.4958,S,"Hong Kong New York, NY"
+22,"Glynn, Miss. Mary Agatha",female,3,7.7500,Q,"Co Clare, Ireland Washington, DC"
+23,"Johannesen-Bratthammer, Mr. Bernt",male,3,8.1125,S,
+24,"Karlsson, Mr. Einar Gervasius",male,3,7.7958,S,
+25,"Landergren, Miss. Aurora Adelia",female,3,7.2500,S,
+26,"Madsen, Mr. Fridtjof Arne",male,3,7.1417,S,
+27,"McDermott, Miss. Brigdet Delia",female,3,7.7875,Q,
+28,"McGovern, Miss. Mary",female,3,7.8792,Q,
+29,"Nilsson, Miss. Helmina Josefina",female,3,7.8542,S,
+30,"Nysten, Miss. Anna Sofia",female,3,7.7500,S,
+31,"O Leary, Miss. Hanora Norah",female,3,7.8292,Q,
+32,"Olsen, Master. Artur Karl",male,3,3.1708,S,
+33,"Riordan, Miss. Johanna ""Hannah""",female,3,7.7208,Q,
+34,"Sandstrom, Miss. Beatrice Irene",female,3,16.7000,S,
+35,"Sandstrom, Mrs. Hjalmar (Agnes Charlotta Bengtsson)",female,3,16.7000,S,
+36,"Sandstrom, Miss. Marguerite Rut",female,3,16.7000,S,
+37,"Smyth, Miss. Julia",female,3,7.7333,Q,
+38,"Svensson, Mr. Johan Cervin",male,3,9.2250,S, 

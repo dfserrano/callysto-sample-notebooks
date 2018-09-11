@@ -1,0 +1,32 @@
+,Name,Sex,Class,Ticket Fare,Embarked,Home Destination
+0,"Astor, Mrs. John Jacob (Madeleine Talmadge Force)",female,1,227.5250,C,"New York, NY"
+1,"Bidois, Miss. Rosalie",female,1,227.5250,C,
+2,"Bowen, Miss. Grace Scott",female,1,262.3750,C,"Cooperstown, NY"
+3,"Carter, Master. William Thornton II",male,1,120.0000,S,"Bryn Mawr, PA"
+4,"Carter, Miss. Lucile Polk",female,1,120.0000,S,"Bryn Mawr, PA"
+5,"Carter, Mrs. William Ernest (Lucile Polk)",female,1,120.0000,S,"Bryn Mawr, PA"
+6,"Chaffee, Mrs. Herbert Fuller (Carrie Constance Toogood)",female,1,61.1750,S,"Amenia, ND"
+7,"Chaudanson, Miss. Victorine",female,1,262.3750,C,
+8,"Clark, Mrs. Walter Miller (Virginia McDowell)",female,1,136.7792,C,"Los Angeles, CA"
+9,"Cumings, Mrs. John Bradley (Florence Briggs Thayer)",female,1,71.2833,C,"New York, NY"
+10,"Endres, Miss. Caroline Louise",female,1,227.5250,C,"New York, NY"
+11,"Eustis, Miss. Elizabeth Mussey",female,1,78.2667,C,"Brookline, MA"
+12,"Fleming, Miss. Margaret",female,1,110.8833,C,
+13,"Geiger, Miss. Amalie",female,1,211.5000,C,
+14,"Hippach, Miss. Jean Gertrude",female,1,57.9792,C,"Chicago, IL"
+15,"Hippach, Mrs. Louis Albert (Ida Sophia Fischer)",female,1,57.9792,C,"Chicago, IL"
+16,"Ryerson, Master. John Borie",male,1,262.3750,C,"Haverford, PA / Cooperstown, NY"
+17,"Ryerson, Miss. Emily Borie",female,1,262.3750,C,"Haverford, PA / Cooperstown, NY"
+18,"Ryerson, Miss. Susan Parker ""Suzette""",female,1,262.3750,C,"Haverford, PA / Cooperstown, NY"
+19,"Ryerson, Mrs. Arthur Larned (Emily Maria Borie)",female,1,262.3750,C,"Haverford, PA / Cooperstown, NY"
+20,"Serepeca, Miss. Augusta",female,1,31.0000,C,
+21,"Stephenson, Mrs. Walter Bertram (Martha Eustis)",female,1,78.2667,C,"Haverford, PA"
+22,"Thayer, Mrs. John Borland (Marian Longstreth Morris)",female,1,110.8833,C,"Haverford, PA"
+23,"Widener, Mrs. George Dunton (Eleanor Elkins)",female,1,211.5000,C,"Elkins Park, PA"
+24,"Hamalainen, Master. Viljo",male,2,14.5000,S,"Detroit, MI"
+25,"Hamalainen, Mrs. William (Anna)",female,2,14.5000,S,"Detroit, MI"
+26,"Hocking, Miss. Ellen ""Nellie""",female,2,23.0000,S,"Cornwall / Akron, OH"
+27,"Hocking, Mrs. Elizabeth (Eliza Needs)",female,2,23.0000,S,"Cornwall / Akron, OH"
+28,"Richards, Master. George Sibley",male,2,18.7500,S,"Cornwall / Akron, OH"
+29,"Richards, Master. William Rowe",male,2,18.7500,S,"Cornwall / Akron, OH"
+30,"Richards, Mrs. Sidney (Emily Hocking)",female,2,18.7500,S,"Cornwall / Akron, OH"

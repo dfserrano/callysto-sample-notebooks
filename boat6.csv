@@ -1,0 +1,21 @@
+,Name,Sex,Class,Ticket Fare,Embarked,Home Destination
+0,"Barber, Miss. Ellen ""Nellie""",female,1,78.8500,S,
+1,"Baxter, Mrs. James (Helene DeLaudeniere Chaput)",female,1,247.5208,C,"Montreal, PQ"
+2,"Bowerman, Miss. Elsie Edith",female,1,55.0000,S,"St Leonards-on-Sea, England Ohio"
+3,"Brown, Mrs. James Joseph (Margaret Tobin)",female,1,27.7208,C,"Denver, CO"
+4,"Candee, Mrs. Edward (Helen Churchill Hungerford)",female,1,27.4458,C,"Washington, DC"
+5,"Cavendish, Mrs. Tyrell William (Julia Florence Siegel)",female,1,78.8500,S,"Little Onn Hall, Staffs"
+6,"Chibnall, Mrs. (Edith Martha Bowerman)",female,1,55.0000,S,"St Leonards-on-Sea, England Ohio"
+7,"Douglas, Mrs. Frederick Charles (Mary Helene Baxter)",female,1,247.5208,C,"Montreal, PQ"
+8,"Icard, Miss. Amelie",female,1,80.0000,,
+9,"Lindstrom, Mrs. Carl Johan (Sigrid Posse)",female,1,27.7208,C,"Stockholm, Sweden"
+10,"Mayne, Mlle. Berthe Antonine (""Mrs de Villiers"")",female,1,49.5042,C,"Belgium  Montreal, PQ"
+11,"Meyer, Mrs. Edgar Joseph (Leila Saks)",female,1,82.1708,C,"New York, NY"
+12,"Newell, Miss. Madeleine",female,1,113.2750,C,"Lexington, MA"
+13,"Newell, Miss. Marjorie",female,1,113.2750,C,"Lexington, MA"
+14,"Peuchen, Major. Arthur Godfrey",male,1,30.5000,S,"Toronto, ON"
+15,"Rothschild, Mrs. Martin (Elizabeth L. Barrett)",female,1,59.4000,C,"New York, NY"
+16,"Smith, Mrs. Lucien Philip (Mary Eloise Hughes)",female,1,60.0000,S,"Huntington, WV"
+17,"Spencer, Mrs. William Augustus (Marie Eugenie)",female,1,146.5208,C,"Paris, France"
+18,"Stone, Mrs. George Nelson (Martha Evelyn)",female,1,80.0000,,"Cincinatti, OH"
+19,"Leeni, Mr. Fahim (""Philip Zenni"")",male,3,7.2250,C,

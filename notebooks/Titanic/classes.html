@@ -1,0 +1,52 @@
+<!-- Import p5.js libraries. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+
+<!-- Basic CSS for iframe. -->
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+</style>
+<script>
+    function getPositions(ev) {
+        console.log()
+        if (ev == null) { ev = window.event }
+           _mouseX = ev.clientX;
+           _mouseY = ev.clientY;
+        }
+    var classes;
+    var first =[1,1,0,0,0,1,1,0,1,0,0,1,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,0,0,1,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,0,0,1,1,0,0,1,0,1,1,0,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,0,1,0,1,1,1,0,1,0,0,0,1,1,1,0,1,1,1,0,1,1,0,1,0,0,0,0,0,1,1,1,0,1,1,1,1,0,0,1,1,1,0,1,0,1,1,0,1,1,0,1,1,0,0,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,1,1,1,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0,0,1,1,1,1,1,1,0,1,1,0,1,1,1,0,1,0,0,0,1,1,0,1,1,1,0,1,1,1,1,0,0,0,1,0,1,0,0,0,1,1,0,1,0,0,1,1,0,1,0,1,1,0,1]
+   
+ 
+   
+    
+    var x = 40;
+    var y = 40;
+    function setup() {
+      console.log()
+      // create canvas
+      createCanvas(1555, 1000);
+      background(222,184,135);
+      classes = createSlider(1, 3, 1);
+      classes.position(20, 10); 
+      classes.style('width', '300px');
+      
+      
+            
+    function show(){
+        if (classes.value() == 2) {
+                            text("Second Class", classes.x *2 + classes.width, 20);   
+                        }
+         if (classes.value() == 3) {
+                text("Third Class", classes.x *2 + clases.width, 20);
+                }
+         
+         if (classes.value() == 1) {
+                text("First Class", classes.x *2 + classes.width, 20);   
+                    } 
+    }
+        
+</script>
